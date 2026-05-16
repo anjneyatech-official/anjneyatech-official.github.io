@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anjneya Tech — Games That Fit Your Day</title>
+  <meta name="description" content="Anjneya Tech develops fun, lightweight mobile games for everyday play. Discover our collection of casual and daily-use games." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Anjneya<strong>Tech</strong></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#games">Games</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="badge">🎮 Mobile Game Studio</div>
+      <h1 class="hero-title">
+        Play Smart.<br />
+        <span class="accent">Play Daily.</span>
+      </h1>
+      <p class="hero-sub">Anjneya Tech crafts lightweight, fun mobile games designed for your everyday moments — in the queue, on a break, or just unwinding.</p>
+      <div class="hero-cta">
+        <a href="#games" class="btn btn-primary">Explore Games</a>
+        <a href="#about" class="btn btn-ghost">About Us</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-mockup">
+        <div class="phone-screen">
+          <div class="game-preview">
+            <div class="pixel-grid" id="pixelGrid"></div>
+            <div class="game-label">Number Merge 2048</div>
+          </div>
+        </div>
+      </div>
+      <div class="float-badge f1">🏆 Top Charts</div>
+      <div class="float-badge f2">⭐ 4.8 Rating</div>
+      <div class="float-badge f3">📲 Free to Play</div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat-item">
+        <span class="stat-num" data-target="50000">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Downloads</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="5">0</span>
+        <span class="stat-label">Games Published</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="4">0</span><span class="stat-plus">.8★</span>
+        <span class="stat-label">Avg. Rating</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+        <span class="stat-label">Free to Play</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAMES -->
+  <section class="games-section" id="games">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Games</span>
+        <h2>Games You'll <span class="accent">Love</span></h2>
+        <p>Each game is crafted for quick sessions and long-term fun.</p>
+      </div>
+
+      <div class="games-grid">
+
+        <!-- Game 1 -->
+        <div class="game-card featured">
+          <div class="card-glow"></div>
+          <div class="game-thumb" style="background: linear-gradient(135deg, #ff6b35, #f7c59f);">
+            <div class="game-icon-big">🔢</div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag tag-new">⭐ Featured</span>
+              <span class="tag">Puzzle</span>
+            </div>
+            <h3>Number Merge 2048</h3>
+            <p>Slide tiles, merge numbers, and chase the legendary 2048 tile. A classic reborn with crisp visuals and satisfying gameplay for daily brain exercise.</p>
+            <div class="card-meta">
+              <span>🎯 Puzzle</span>
+              <span>📱 Android</span>
+              <span>⭐ 4.8</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-primary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
+                Play on Google Play
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game 2 — Tap Reflex -->
+        <div class="game-card">
+          <div class="card-glow"></div>
+          <div class="game-thumb" style="background: linear-gradient(135deg, #4ecdc4, #44af69);">
+            <div class="game-icon-big">⚡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag tag-hot">🔥 New</span>
+              <span class="tag">Arcade</span>
+            </div>
+            <h3>Tap Reflex Rush</h3>
+            <p>How fast are your reflexes? Tap colored targets before they vanish. Challenge friends, unlock streaks, and master your reaction time every single day.</p>
+            <div class="card-meta">
+              <span>🎯 Arcade</span>
+              <span>📱 Android</span>
+              <span>⭐ 4.7</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-primary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
+                Play on Google Play
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game 3 — Word Daily -->
+        <div class="game-card">
+          <div class="card-glow"></div>
+          <div class="game-thumb" style="background: linear-gradient(135deg, #a855f7, #6366f1);">
+            <div class="game-icon-big">🔤</div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag">Word</span>
+              <span class="tag">Daily</span>
+            </div>
+            <h3>Word Daily Challenge</h3>
+            <p>Guess the hidden word in 6 attempts. A new puzzle every day, shareable results, and a growing vocabulary. Perfect for your morning routine.</p>
+            <div class="card-meta">
+              <span>🎯 Word</span>
+              <span>📱 Android</span>
+              <span>⭐ 4.6</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-outline btn-sm">Coming Soon</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MINI GAME DEMO -->
+  <section class="demo-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Try It Now</span>
+        <h2>Play <span class="accent">Right Here</span></h2>
+        <p>A bite-sized demo of Tap Reflex Rush — right in your browser!</p>
+      </div>
+      <div class="demo-wrapper">
+        <div class="demo-card">
+          <div class="demo-header">
+            <span>⚡ Tap Reflex Rush — Browser Demo</span>
+            <span id="demoScore" class="demo-score">Score: 0</span>
+          </div>
+          <div class="demo-arena" id="demoArena">
+            <div class="demo-idle" id="demoIdle">
+              <div class="demo-idle-icon">👆</div>
+              <p>Tap the button to start!</p>
+              <button class="btn btn-primary" id="startDemo">Start Game</button>
+            </div>
+            <div class="demo-playing" id="demoPlaying" style="display:none;">
+              <div class="demo-timer-bar"><div id="timerBar"></div></div>
+              <div class="demo-targets" id="targetsArea"></div>
+              <div class="demo-combo" id="comboDisplay"></div>
+            </div>
+            <div class="demo-result" id="demoResult" style="display:none;">
+              <div class="result-emoji" id="resultEmoji">🏆</div>
+              <h3 id="resultText">Amazing!</h3>
+              <p id="resultScore">You scored 0 points</p>
+              <button class="btn btn-primary" id="restartDemo">Play Again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-card-stack">
+          <div class="acard acard1">🎮 Casual Games</div>
+          <div class="acard acard2">🧠 Brain Training</div>
+          <div class="acard acard3">📅 Daily Challenges</div>
+          <div class="acard acard4">⚡ Quick Sessions</div>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-tag">About Anjneya Tech</span>
+        <h2>Small Studio. <span class="accent">Big Fun.</span></h2>
+        <p>We're a passionate indie game development studio focused on building casual, lightweight games that fit into your daily life — not take it over.</p>
+        <p>Every game we release is designed with simplicity, replayability, and daily engagement in mind. From number puzzles to reflex challenges, we believe great games don't need to be complicated.</p>
+        <div class="about-values">
+          <div class="value-pill">🚀 Fast & Light</div>
+          <div class="value-pill">🎨 Clean Design</div>
+          <div class="value-pill">🔁 Daily Play</div>
+          <div class="value-pill">❤️ Made with Love</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Say <span class="accent">Hello</span></h2>
+        <p>Have feedback, a collaboration idea, or just want to chat about games?</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="ci-icon">📧</span>
+            <div>
+              <strong>Email Us</strong>
+              <a href="mailto:contact@anjneyatech.com">contact@anjneyatech.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📱</span>
+            <div>
+              <strong>Google Play</strong>
+              <a href="https://play.google.com/store" target="_blank">Anjneya Tech on Play Store</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">🌐</span>
+            <div>
+              <strong>Developer Policy</strong>
+              <a href="/app-ads.txt">app-ads.txt</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" onsubmit="handleForm(event)">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message 🚀</button>
+          <div class="form-success" id="formSuccess" style="display:none;">✅ Message sent! We'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Anjneya<strong>Tech</strong></span>
+        <p>Games That Fit Your Day.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="/app-ads.txt">app-ads.txt</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Anjneya Tech. All rights reserved. Built with ❤️ in India.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
