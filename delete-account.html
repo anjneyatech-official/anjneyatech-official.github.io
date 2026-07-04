@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account &amp; Data Deletion — Anjneya Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .policy-page { max-width: 760px; margin: 100px auto 80px; padding: 0 24px; }
+    .policy-page h1 { margin-bottom: 8px; }
+    .policy-page .updated { color: var(--text-muted); font-size: 0.88rem; margin-bottom: 40px; }
+    .policy-page h2 { font-size: 1.3rem; margin: 32px 0 10px; color: var(--accent); }
+    .policy-page p, .policy-page li { color: var(--text-muted); line-height: 1.8; margin-bottom: 10px; }
+    .policy-page ul, .policy-page ol { padding-left: 20px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 700; margin-bottom: 32px; }
+    .btn-delete {
+      display: inline-block; margin-top: 10px; padding: 12px 22px;
+      background: var(--accent); color: #0b0f14; text-decoration: none;
+      border-radius: 10px; font-weight: 700;
+    }
+    .app-tag { display:inline-block; font-size:0.8rem; padding:3px 10px; border:1px solid var(--accent); border-radius:20px; color:var(--accent); margin-bottom:24px; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Anjneya<strong>Tech</strong></span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="policy-page">
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <h1>Account &amp; Data Deletion</h1>
+    <p class="updated">Last updated: July 2026</p>
+    <span class="app-tag">AdLens · com.ajtech.adlens</span>
+
+    <p>AdLens does <strong>not</strong> create its own accounts and does <strong>not</strong> store your data on our servers. You sign in with your existing Google account, and all app data — cached AdMob reports, settings, and sign-in tokens — is stored <strong>only on your device</strong>.</p>
+
+    <h2>1. Delete your data yourself (immediate)</h2>
+    <ol>
+      <li><strong>Revoke AdLens's access</strong> to your Google account at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>. This stops AdLens from reading your AdMob data.</li>
+      <li><strong>Sign out</strong> in the app (<em>Settings → Sign out</em>) to remove stored authentication tokens.</li>
+      <li><strong>Uninstall the app</strong> to erase all locally stored data.</li>
+    </ol>
+
+    <h2>2. Request deletion by email</h2>
+    <p>Prefer we handle it? Email us with the subject <em>"Delete my data"</em>. We action all requests within 30 days.</p>
+    <a class="btn-delete" href="mailto:anjneyatech@gmail.com?subject=Delete%20my%20data&body=Please%20delete%20my%20AdLens%20account%20and%20associated%20data.">Request deletion by email</a>
+
+    <h2>3. What gets deleted</h2>
+    <ul>
+      <li>Locally cached AdMob reports and preferences (removed on uninstall).</li>
+      <li>Google Sign-In / OAuth tokens on the device (removed on sign-out).</li>
+      <li>AdLens's authorization to access your AdMob data (removed on revoke).</li>
+    </ul>
+    <p>Note: your AdMob account and its data are owned and controlled by Google, not by AdLens. Manage that data through your <a href="https://apps.admob.com" target="_blank" rel="noopener">AdMob account</a> and <a href="https://myaccount.google.com" target="_blank" rel="noopener">Google Account</a>.</p>
+
+    <h2>4. Contact</h2>
+    <p><a href="mailto:anjneyatech@gmail.com">anjneyatech@gmail.com</a></p>
+  </div>
+</body>
+</html>
