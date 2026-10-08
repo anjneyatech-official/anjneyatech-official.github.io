@@ -3,398 +3,289 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anjneya Tech — Apps That Make Life Better</title>
-  <meta name="description" content="Anjneya Tech is a mobile app studio crafting fun, lightweight, and useful apps — from learning tools to puzzle games and privacy utilities." />
-  <meta name="theme-color" content="#07070b" />
-  <meta property="og:title" content="Anjneya Tech — Apps That Make Life Better" />
-  <meta property="og:description" content="A small studio building beautiful, lightweight mobile apps for everyday life." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Anjneya Tech — Private, offline-first Android apps &amp; puzzle games</title>
+  <meta name="description" content="Anjneya Tech is an independent studio building lightweight, privacy-respecting Android apps and puzzle games: OpenAny, QRino, CleanShare, OneCalc, Chess Clock Pro, AdLens, Inkroad, Loop The Loop, Slide Out and Color Escape." />
+  <link rel="canonical" href="https://anjneyatech-official.github.io/" />
+  <meta name="theme-color" content="#0a1433" />
+  <meta name="color-scheme" content="light dark" />
   <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <meta property="og:site_name" content="Anjneya Tech" />
+  <meta property="og:title" content="Anjneya Tech — Private, offline-first Android apps &amp; games" />
+  <meta property="og:description" content="Lightweight, privacy-respecting Android apps and puzzle games from an independent studio." />
+  <meta property="og:url" content="https://anjneyatech-official.github.io/" />
+  <meta property="og:image" content="https://anjneyatech-official.github.io/assets/logo-512.png" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Anjneya Tech",
+    "url": "https://anjneyatech-official.github.io/",
+    "logo": "https://anjneyatech-official.github.io/assets/logo-512.png",
+    "email": "anjneyatech@gmail.com",
+    "sameAs": ["https://play.google.com/store/apps/dev?id=4810421852702262741"]
+  }
+  </script>
+  <script src="main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- SCROLL PROGRESS -->
-  <div class="scroll-progress" id="scrollProgress"></div>
-
-  <!-- BACKGROUND -->
-  <div class="bg-fx" aria-hidden="true">
-    <div class="aurora a1"></div>
-    <div class="aurora a2"></div>
-    <div class="aurora a3"></div>
-    <div class="grid-overlay"></div>
-    <div class="noise"></div>
-  </div>
-
-  <!-- NAV -->
-  <nav class="nav" id="navbar">
-    <div class="nav-inner">
-      <a href="#top" class="logo magnetic">
-        <span class="logo-mark">A</span>
-        <span class="logo-text">Anjneya<strong>Tech</strong></span>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Anjneya Tech home">
+        <img src="assets/logo-96.png" width="36" height="36" alt="" />
+        <span>Anjneya <b>Tech</b></span>
       </a>
-      <ul class="nav-links">
-        <li><a href="#apps">Apps</a></li>
-        <li><a href="#features">Why Us</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a href="https://play.google.com/store/apps/developer?id=Anjneya+Tech" target="_blank" rel="noopener" class="btn btn-primary btn-sm nav-cta magnetic">Get the Apps</a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
       </button>
-    </div>
-    <div class="nav-mobile" id="navMobile">
-      <a href="#apps">Apps</a>
-      <a href="#features">Why Us</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="https://play.google.com/store/apps/developer?id=Anjneya+Tech" target="_blank" rel="noopener" class="btn btn-primary btn-full">Get the Apps</a>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header class="hero" id="top">
-    <div class="spotlight" id="spotlight"></div>
-    <div class="hero-grid">
-      <div class="hero-content">
-        <span class="badge reveal">
-          <span class="badge-dot"></span> Mobile App Studio · India
-        </span>
-        <h1 class="hero-title reveal" data-delay="1">
-          Apps That
-          <span class="grad-text">Make Life Better.</span>
-        </h1>
-        <p class="hero-sub reveal" data-delay="2">
-          We're a small studio building lightweight, beautiful mobile apps —
-          from learning tools to puzzle games and privacy utilities.
-          Simple, fast, and made to fit your day.
-        </p>
-        <div class="hero-cta reveal" data-delay="3">
-          <a href="#apps" class="btn btn-primary magnetic">
-            Explore Apps
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="#about" class="btn btn-ghost magnetic">About the Studio</a>
-        </div>
-        <div class="hero-meta reveal" data-delay="4">
-          <div class="avatars">
-            <span style="background:linear-gradient(135deg,#a78bfa,#6366f1)">🧩</span>
-            <span style="background:linear-gradient(135deg,#fbbf24,#fb7185)">🔤</span>
-            <span style="background:linear-gradient(135deg,#22d3ee,#3b82f6)">🔒</span>
-          </div>
-          <p><strong>50,000+</strong> downloads &amp; counting on Google Play</p>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal" data-delay="3">
-        <div class="phone tilt" id="phone">
-          <div class="phone-glow"></div>
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <div class="ph-statusbar">
-              <span>9:41</span>
-              <span class="ph-dots"><i></i><i></i><i></i></span>
-            </div>
-            <div class="ph-stage" id="phoneStage">
-              <!-- app slides injected by JS -->
-            </div>
-            <div class="ph-dock">
-              <span></span><span></span><span></span><span></span>
-            </div>
-          </div>
-        </div>
-        <div class="float-chip c1">⭐ 4.8 avg rating</div>
-        <div class="float-chip c2">⚡ Under 15&nbsp;MB</div>
-        <div class="float-chip c3">🔒 Privacy-first</div>
-      </div>
-    </div>
-
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Education</span><i>✦</i><span>Puzzle Games</span><i>✦</i><span>Privacy</span><i>✦</i>
-        <span>Productivity</span><i>✦</i><span>Offline-ready</span><i>✦</i><span>Lightweight</span><i>✦</i>
-        <span>Education</span><i>✦</i><span>Puzzle Games</span><i>✦</i><span>Privacy</span><i>✦</i>
-        <span>Productivity</span><i>✦</i><span>Offline-ready</span><i>✦</i><span>Lightweight</span><i>✦</i>
-      </div>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="#apps">Apps</a>
+        <a href="#principles">Principles</a>
+        <a href="#about">Studio</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-sm btn-primary" href="https://play.google.com/store/apps/dev?id=4810421852702262741" rel="noopener noreferrer" target="_blank">Google Play</a>
+      </nav>
     </div>
   </header>
 
-  <!-- STATS -->
-  <section class="stats">
-    <div class="container stats-row">
-      <div class="stat-item reveal">
-        <span class="stat-num" data-target="50000">0</span><span class="stat-suffix">+</span>
-        <span class="stat-label">Downloads</span>
-      </div>
-      <div class="stat-item reveal" data-delay="1">
-        <span class="stat-num" data-target="3">0</span>
-        <span class="stat-label">Apps Published</span>
-      </div>
-      <div class="stat-item reveal" data-delay="2">
-        <span class="stat-num" data-target="4">0</span><span class="stat-suffix">.8★</span>
-        <span class="stat-label">Avg. Rating</span>
-      </div>
-      <div class="stat-item reveal" data-delay="3">
-        <span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span>
-        <span class="stat-label">Free to Install</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- APPS -->
-  <section class="section apps-section" id="apps">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Our Apps</span>
-        <h2>Apps You'll <span class="grad-text">Actually Love</span></h2>
-        <p>Three apps, one promise — useful, beautiful, and respectful of your time.</p>
-      </div>
-
-      <div class="apps-grid">
-
-        <!-- Hexora -->
-        <article class="app-card tilt featured reveal">
-          <div class="card-sheen"></div>
-          <div class="app-thumb" style="--g1:#a855f7; --g2:#6366f1;">
-            <span class="app-glyph">🧩</span>
-            <span class="thumb-ring"></span>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent Android studio</p>
+          <h1>Small, private, <span class="grad nowrap">well&#8209;made</span> apps.</h1>
+          <p class="lede">We build lightweight Android tools and puzzle games that do one job well — most work fully offline, need no account, and keep your files on your device.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#apps">Explore our apps</a>
+            <a class="btn btn-ghost" href="https://play.google.com/store/apps/dev?id=4810421852702262741" rel="noopener noreferrer" target="_blank">View on Google Play <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="app-body">
-            <div class="app-tags">
-              <span class="tag tag-featured">★ Featured</span>
-              <span class="tag">Puzzle</span>
-            </div>
-            <h3>Hexora: Hex Word Puzzle</h3>
-            <p>A fresh take on word puzzles on a hexagonal board. Chain letters, build words, and stretch your vocabulary one clever move at a time.</p>
-            <div class="app-meta">
-              <span>🎯 Puzzle</span><span>📱 Android</span><span>⭐ 4.5+</span>
-            </div>
-            <a href="https://play.google.com/store/apps/details?id=com.hexora.ajtech" target="_blank" rel="noopener" class="btn btn-primary btn-sm btn-store">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
-              Get on Play Store
-            </a>
-          </div>
-        </article>
-
-        <!-- AlphaLeap -->
-        <article class="app-card tilt reveal" data-delay="1">
-          <div class="card-sheen"></div>
-          <div class="app-thumb" style="--g1:#fbbf24; --g2:#fb7185;">
-            <span class="app-glyph">🔤</span>
-            <span class="thumb-ring"></span>
-          </div>
-          <div class="app-body">
-            <div class="app-tags">
-              <span class="tag tag-hot">🔥 Popular</span>
-              <span class="tag">Education</span>
-            </div>
-            <h3>AlphaLeap: ABC Learning</h3>
-            <p>Learning made playful. Kids pick up alphabets, words, and early concepts through bright, interactive activities they'll keep coming back to.</p>
-            <div class="app-meta">
-              <span>🎯 Education</span><span>📱 Android</span><span>⭐ 4.8+</span>
-            </div>
-            <a href="https://play.google.com/store/apps/details?id=com.alphaleap.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm btn-store">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
-              Get on Play Store
-            </a>
-          </div>
-        </article>
-
-        <!-- Obscura -->
-        <article class="app-card tilt reveal" data-delay="2">
-          <div class="card-sheen"></div>
-          <div class="app-thumb" style="--g1:#22d3ee; --g2:#3b82f6;">
-            <span class="app-glyph">🔒</span>
-            <span class="thumb-ring"></span>
-          </div>
-          <div class="app-body">
-            <div class="app-tags">
-              <span class="tag">Privacy</span>
-              <span class="tag">Utility</span>
-            </div>
-            <h3>Obscura: Private Notes &amp; Vault</h3>
-            <p>A secure home for what matters. Store private notes behind encryption, lock your sensitive info away, and keep your peace of mind.</p>
-            <div class="app-meta">
-              <span>🎯 Utility</span><span>📱 Android</span><span>⭐ 4.6+</span>
-            </div>
-            <a href="https://play.google.com/store/apps/details?id=com.obscura.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm btn-store">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
-              Get on Play Store
-            </a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="section features-section" id="features">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Why Anjneya Tech</span>
-        <h2>Built Small. <span class="grad-text">Done Right.</span></h2>
-        <p>The details we sweat so you never have to think about them.</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card reveal">
-          <span class="feature-icon">⚡</span>
-          <h3>Fast &amp; Lightweight</h3>
-          <p>Every app is tuned to launch instantly and stay under 15&nbsp;MB — no bloat, no waiting.</p>
+          <dl class="stats">
+            <div><dt>Apps &amp; games</dt><dd>10</dd></div>
+            <div><dt>Downloads</dt><dd>1,000+</dd></div>
+            <div><dt>Top rating</dt><dd>5.0<span aria-hidden="true">★</span></dd></div>
+          </dl>
         </div>
-        <div class="feature-card reveal" data-delay="1">
-          <span class="feature-icon">🔒</span>
-          <h3>Privacy-First</h3>
-          <p>Your data stays on your device. We collect the minimum and never sell what we don't take.</p>
-        </div>
-        <div class="feature-card reveal" data-delay="2">
-          <span class="feature-icon">🎨</span>
-          <h3>Beautiful by Default</h3>
-          <p>Clean, modern interfaces that feel good to use — design is never an afterthought.</p>
-        </div>
-        <div class="feature-card reveal">
-          <span class="feature-icon">📶</span>
-          <h3>Works Offline</h3>
-          <p>No connection? No problem. Our core experiences run fully offline, anywhere.</p>
-        </div>
-        <div class="feature-card reveal" data-delay="1">
-          <span class="feature-icon">🆓</span>
-          <h3>Free to Install</h3>
-          <p>Download and start using in seconds. No paywalls between you and the good stuff.</p>
-        </div>
-        <div class="feature-card reveal" data-delay="2">
-          <span class="feature-icon">🔄</span>
-          <h3>Always Improving</h3>
-          <p>Regular updates driven by real feedback. We ship, we listen, we make it better.</p>
+        <div class="hero-art" aria-hidden="true">
+          <img src="assets/icons/openany.webp" alt="" width="96" height="96" />
+          <img src="assets/icons/qrino.webp" alt="" width="96" height="96" />
+          <img src="assets/icons/inkroad.webp" alt="" width="96" height="96" />
+          <img src="assets/icons/metadataremover.webp" alt="" width="96" height="96" />
+          <img src="assets/icons/onecalc.webp" alt="" width="96" height="96" />
+          <img src="assets/icons/looptheloop.webp" alt="" width="96" height="96" />
+          <img src="assets/icons/slideout.webp" alt="" width="96" height="96" />
+          <img src="assets/icons/chessclockpro.webp" alt="" width="96" height="96" />
+          <img src="assets/icons/colorescape.webp" alt="" width="96" height="96" />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ABOUT -->
-  <section class="section about-section" id="about">
-    <div class="container about-grid">
-      <div class="about-visual reveal">
-        <div class="about-orb">
-          <span class="orb-core">A</span>
-          <span class="orbit o1"><i>🧩</i></span>
-          <span class="orbit o2"><i>🔤</i></span>
-          <span class="orbit o3"><i>🔒</i></span>
+    <section class="section spotlight-section" aria-labelledby="spotlight-title">
+      <div class="container spotlight">
+        <img class="spotlight-icon" src="assets/icons/openany.webp" alt="OpenAny app icon" width="128" height="128" loading="lazy" />
+        <div>
+          <p class="eyebrow">Most popular</p>
+          <h2 id="spotlight-title">OpenAny — open almost any file, offline.</h2>
+          <p>A tiny (~4&nbsp;MB) viewer for PDF, Word, Excel, PowerPoint, EPUB, archives, images, video, audio and code. No account, no ads, no trackers — your files never leave your phone.</p>
+          <ul class="checks">
+            <li>No storage permission needed</li>
+            <li>Rated 5.0 by 16 reviewers</li>
+            <li>1,000+ downloads</li>
+          </ul>
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.ajtech.openany" rel="noopener noreferrer" target="_blank">Get OpenAny on Google Play</a>
         </div>
       </div>
-      <div class="about-text reveal" data-delay="1">
-        <span class="section-tag">About the Studio</span>
-        <h2>Small Studio. <span class="grad-text">Big Care.</span></h2>
-        <p>Anjneya Tech is an independent mobile studio with a simple belief: a great app doesn't need to be complicated to be genuinely useful.</p>
-        <p>We pick problems worth solving — learning, focus, privacy, play — then build the lightest, most thoughtful app we can. No dark patterns, no clutter. Just craft.</p>
-        <div class="about-values">
-          <div class="value-pill">🚀 Fast &amp; Light</div>
-          <div class="value-pill">🎨 Clean Design</div>
-          <div class="value-pill">🔒 Secure &amp; Private</div>
-          <div class="value-pill">❤️ Made with Care</div>
+    </section>
+
+    <section class="section" id="apps" aria-labelledby="apps-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Portfolio</p>
+            <h2 id="apps-title">Our apps &amp; games</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter apps">
+            <button type="button" data-filter="all" aria-pressed="true">All <span>10</span></button>
+            <button type="button" data-filter="app" aria-pressed="false">Apps <span>6</span></button>
+            <button type="button" data-filter="game" aria-pressed="false">Games <span>4</span></button>
+          </div>
+        </div>
+
+        <div class="app-group" data-group="app">
+          <h3 class="group-title">Apps &amp; utilities</h3>
+        <ul class="app-grid">
+          <li class="app-card" data-type="app">
+            <div class="app-top"><img src="assets/icons/openany.webp" alt="" width="64" height="64" loading="lazy" />
+              <div><h4>OpenAny</h4><p class="app-sub">PDF &amp; Document Reader</p></div></div>
+            <p>Read PDF, Word, Excel, PowerPoint and photos offline in a ~4&nbsp;MB app.</p>
+            <ul class="tags"><li>Offline</li><li>No ads</li><li>No account</li></ul>
+            <div class="app-foot"><span class="meta">★ 5.0 · 1K+ downloads</span>
+              <a href="https://play.google.com/store/apps/details?id=com.ajtech.openany" rel="noopener noreferrer" target="_blank" aria-label="Get OpenAny on Google Play">Get it <span aria-hidden="true">→</span></a></div>
+          </li>
+          <li class="app-card" data-type="app">
+            <div class="app-top"><img src="assets/icons/qrino.webp" alt="" width="64" height="64" loading="lazy" />
+              <div><h4>QRino</h4><p class="app-sub">QR Code Scanner &amp; Maker</p></div></div>
+            <p>Scan and design custom QR codes with colours, logos, frames and 3D styles.</p>
+            <ul class="tags"><li>Offline</li><li>No ads</li></ul>
+            <div class="app-foot"><span class="meta">Productivity</span>
+              <a href="https://play.google.com/store/apps/details?id=com.ajtech.qrino" rel="noopener noreferrer" target="_blank" aria-label="Get QRino on Google Play">Get it <span aria-hidden="true">→</span></a></div>
+          </li>
+          <li class="app-card" data-type="app">
+            <div class="app-top"><img src="assets/icons/metadataremover.webp" alt="" width="64" height="64" loading="lazy" />
+              <div><h4>CleanShare</h4><p class="app-sub">EXIF &amp; GPS Remover</p></div></div>
+            <p>Strip GPS location and hidden metadata from photos, videos and documents before you share.</p>
+            <ul class="tags"><li>No internet access</li><li>No ads</li><li>No tracking</li></ul>
+            <div class="app-foot"><span class="meta">Privacy tool</span>
+              <a href="https://play.google.com/store/apps/details?id=com.ajtech.metadataremover" rel="noopener noreferrer" target="_blank" aria-label="Get CleanShare on Google Play">Get it <span aria-hidden="true">→</span></a></div>
+          </li>
+          <li class="app-card" data-type="app">
+            <div class="app-top"><img src="assets/icons/onecalc.webp" alt="" width="64" height="64" loading="lazy" />
+              <div><h4>OneCalc</h4><p class="app-sub">All-in-One Calculator</p></div></div>
+            <p>43 calculators in one: EMI, GST, SIP, scientific, unit converter, dates and more.</p>
+            <ul class="tags"><li>Offline</li><li>No account</li></ul>
+            <div class="app-foot"><span class="meta">Tools</span>
+              <a href="https://play.google.com/store/apps/details?id=com.ajtech.onecalc" rel="noopener noreferrer" target="_blank" aria-label="Get OneCalc on Google Play">Get it <span aria-hidden="true">→</span></a></div>
+          </li>
+          <li class="app-card" data-type="app">
+            <div class="app-top"><img src="assets/icons/chessclockpro.webp" alt="" width="64" height="64" loading="lazy" />
+              <div><h4>Chess Clock Pro</h4><p class="app-sub">Chess Timer</p></div></div>
+            <p>Tournament-ready timer: Fischer increment, Bronstein delay, byo-yomi and multi-stage controls.</p>
+            <ul class="tags"><li>Offline</li><li>No ads</li></ul>
+            <div class="app-foot"><span class="meta"><span class="new">New</span> Tools</span>
+              <a href="https://play.google.com/store/apps/details?id=com.ajtech.chessclockpro" rel="noopener noreferrer" target="_blank" aria-label="Get Chess Clock Pro on Google Play">Get it <span aria-hidden="true">→</span></a></div>
+          </li>
+          <li class="app-card" data-type="app">
+            <div class="app-top"><img src="assets/icons/adlens.webp" alt="" width="64" height="64" loading="lazy" />
+              <div><h4>AdLens</h4><p class="app-sub">AdMob Revenue Tracker</p></div></div>
+            <p>AdMob earnings, eCPM and CTR at a glance, with alerts — built for indie app publishers.</p>
+            <ul class="tags"><li>Data stays on device</li></ul>
+            <div class="app-foot"><span class="meta">Business</span>
+              <a href="https://play.google.com/store/apps/details?id=com.ajtech.adlens" rel="noopener noreferrer" target="_blank" aria-label="Get AdLens on Google Play">Get it <span aria-hidden="true">→</span></a></div>
+          </li>
+        </ul>
+        </div>
+        <div class="app-group" data-group="game">
+          <h3 class="group-title">Puzzle games</h3>
+        <ul class="app-grid app-grid-4">
+          <li class="app-card" data-type="game">
+            <div class="app-top"><img src="assets/icons/inkroad.webp" alt="" width="64" height="64" loading="lazy" />
+              <div><h4>Inkroad</h4><p class="app-sub">Draw Physics Puzzle</p></div></div>
+            <p>Draw a road, drive it, land the goal. 68 handcrafted levels across ten worlds — and it keeps going.</p>
+            <ul class="tags"><li>Offline</li><li>Physics</li></ul>
+            <div class="app-foot"><span class="meta">Puzzle game</span>
+              <a href="https://play.google.com/store/apps/details?id=com.ajtech.inkroad" rel="noopener noreferrer" target="_blank" aria-label="Get Inkroad on Google Play">Get it <span aria-hidden="true">→</span></a></div>
+          </li>
+          <li class="app-card" data-type="game">
+            <div class="app-top"><img src="assets/icons/looptheloop.webp" alt="" width="64" height="64" loading="lazy" />
+              <div><h4>Loop The Loop</h4><p class="app-sub">Logic Puzzle</p></div></div>
+            <p>Classic Slitherlink: every board has one unique solution. Pure deduction, no guessing.</p>
+            <ul class="tags"><li>Slitherlink</li><li>Logic</li></ul>
+            <div class="app-foot"><span class="meta">Puzzle game</span>
+              <a href="https://play.google.com/store/apps/details?id=com.ajtech.looptheloop" rel="noopener noreferrer" target="_blank" aria-label="Get Loop The Loop on Google Play">Get it <span aria-hidden="true">→</span></a></div>
+          </li>
+          <li class="app-card" data-type="game">
+            <div class="app-top"><img src="assets/icons/slideout.webp" alt="" width="64" height="64" loading="lazy" />
+              <div><h4>Slide Out</h4><p class="app-sub">Escape Puzzle</p></div></div>
+            <p>Tap arrows to slide them off the board. Simple rules, relaxing — and surprisingly tricky.</p>
+            <ul class="tags"><li>Relaxing</li><li>Brain teaser</li></ul>
+            <div class="app-foot"><span class="meta">★ 5.0 · Puzzle game</span>
+              <a href="https://play.google.com/store/apps/details?id=com.ajtech.slideout" rel="noopener noreferrer" target="_blank" aria-label="Get Slide Out on Google Play">Get it <span aria-hidden="true">→</span></a></div>
+          </li>
+          <li class="app-card" data-type="game">
+            <div class="app-top"><img src="assets/icons/colorescape.webp" alt="" width="64" height="64" loading="lazy" />
+              <div><h4>Color Escape</h4><p class="app-sub">Color Sort Puzzle</p></div></div>
+            <p>Sort coloured liquids into bottles across campaign levels and relaxing brain challenges.</p>
+            <ul class="tags"><li>Relaxing</li><li>Sorting</li></ul>
+            <div class="app-foot"><span class="meta">Puzzle game</span>
+              <a href="https://play.google.com/store/apps/details?id=com.axionix.colorescape" rel="noopener noreferrer" target="_blank" aria-label="Get Color Escape on Google Play">Get it <span aria-hidden="true">→</span></a></div>
+          </li>
+        </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA BAND -->
-  <section class="section cta-band-section">
-    <div class="container">
-      <div class="cta-band reveal">
-        <div class="cta-band-glow"></div>
-        <h2>Find your next favorite app.</h2>
-        <p>Browse the full Anjneya Tech collection on Google Play.</p>
-        <a href="https://play.google.com/store/apps/developer?id=Anjneya+Tech" target="_blank" rel="noopener" class="btn btn-light magnetic">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
-          View All Apps on Play Store
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section contact-section" id="contact">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Get In Touch</span>
-        <h2>Say <span class="grad-text">Hello</span></h2>
-        <p>Feedback, a collaboration idea, or just want to chat? We'd love to hear from you.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <a class="contact-item" href="mailto:contact@anjneyatech.com">
-            <span class="ci-icon">📧</span>
-            <div><strong>Email Us</strong><span>contact@anjneyatech.com</span></div>
-          </a>
-          <a class="contact-item" href="https://play.google.com/store/apps/developer?id=Anjneya+Tech" target="_blank" rel="noopener">
-            <span class="ci-icon">📱</span>
-            <div><strong>Google Play</strong><span>Anjneya Tech on Play Store</span></div>
-          </a>
-          <a class="contact-item" href="/app-ads.txt">
-            <span class="ci-icon">🌐</span>
-            <div><strong>Developer Policy</strong><span>View app-ads.txt</span></div>
-          </a>
+    <section class="section section-alt" id="principles" aria-labelledby="principles-title">
+      <div class="container">
+        <div class="section-head center">
+          <div>
+            <p class="eyebrow">How we build</p>
+            <h2 id="principles-title">Principles in every release</h2>
+          </div>
         </div>
-        <form class="contact-form reveal" data-delay="1" id="contactForm">
-          <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required />
-          </div>
-          <div class="form-group">
-            <input type="email" name="email" placeholder="Your Email" required />
-          </div>
-          <div class="form-group">
-            <textarea rows="4" name="message" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">
-            Send Message
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-          </button>
-          <div class="form-success" id="formSuccess">✅ Message sent! We'll get back to you soon.</div>
-        </form>
+        <ul class="principles">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            <h3>Private by design</h3>
+            <p>Your files and data stay on your device. Our tools don't ask for accounts they don't need.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9a13 13 0 0118 0"/><path d="M6.5 12.5a8 8 0 0111 0"/><path d="M10 16a3 3 0 014 0"/><path d="M3 3l18 18"/></svg>
+            <h3>Offline-first</h3>
+            <p>Most of our apps work without an internet connection — on a plane, underground, anywhere.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg>
+            <h3>Small &amp; fast</h3>
+            <p>Lean builds that install quickly, launch instantly and respect your storage and battery.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 4v5h-5"/></svg>
+            <h3>Actively maintained</h3>
+            <p>Every app in our catalogue received updates in 2026. We fix issues and keep improving.</p>
+          </li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div>
+          <p class="eyebrow">The studio</p>
+          <h2 id="about-title">Made with care by an independent team.</h2>
+        </div>
+        <div class="about-copy">
+          <p>Anjneya Tech is a small, independent mobile studio with a simple belief: a great app doesn't need to be complicated to be genuinely useful.</p>
+          <p>We pick everyday problems worth solving — reading files, sharing photos safely, quick calculations, a good puzzle on the commute — and build the lightest, most thoughtful app we can. No dark patterns, no clutter.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Questions, feedback or partnerships?</h2>
+            <p>We read every message. For app support, include the app name and your Android version.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:anjneyatech@gmail.com">anjneyatech@gmail.com</a>
+            <a class="btn btn-ghost" href="https://play.google.com/store/apps/dev?id=4810421852702262741" rel="noopener noreferrer" target="_blank">All apps on Google Play <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="#top" class="logo">
-          <span class="logo-mark">A</span>
-          <span class="logo-text">Anjneya<strong>Tech</strong></span>
-        </a>
-        <p>Apps that fit your day.</p>
-      </div>
-      <div class="footer-cols">
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <a href="#apps">Apps</a>
-          <a href="#features">Why Us</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="/app-ads.txt">app-ads.txt</a>
-        </div>
-        <div class="footer-col">
-          <h4>Get the Apps</h4>
-          <a href="https://play.google.com/store/apps/developer?id=Anjneya+Tech" target="_blank" rel="noopener">Google Play</a>
-          <a href="mailto:contact@anjneyatech.com">Email Us</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Anjneya Tech. All rights reserved.</p>
-      <p>Built with ❤️ in India.</p>
+      <a href="#top" class="brand" aria-label="Back to top">
+        <img src="assets/logo-96.png" width="28" height="28" alt="" loading="lazy" />
+        <span>Anjneya <b>Tech</b></span>
+      </a>
+      <nav aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="delete-account.html">Account &amp; Data Deletion</a>
+        <a href="mailto:anjneyatech@gmail.com">Email</a>
+      </nav>
+      <p>© <span id="year">2026</span> Anjneya Tech. Google Play is a trademark of Google LLC.</p>
     </div>
   </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>

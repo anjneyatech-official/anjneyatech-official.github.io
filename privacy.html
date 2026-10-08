@@ -3,43 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Privacy Policy — Anjneya Tech</title>
-  <meta name="theme-color" content="#07070b" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <meta name="description" content="How Anjneya Tech apps and games handle your information." />
+  <link rel="canonical" href="https://anjneyatech-official.github.io/privacy.html" />
+  <meta name="theme-color" content="#0a1433" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .policy-page { max-width: 780px; margin: 130px auto 90px; padding: 0 28px; }
-    .policy-page h1 { margin-bottom: 8px; }
-    .policy-page .updated { color: var(--text-muted); font-size: 0.88rem; margin-bottom: 44px; }
-    .policy-page h2 { font-size: 1.25rem; margin: 36px 0 12px; }
-    .policy-page p, .policy-page li { color: var(--text-dim); line-height: 1.85; margin-bottom: 10px; }
-    .policy-page ul { padding-left: 22px; }
-    .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--violet); font-weight: 700; margin-bottom: 34px; transition: var(--t); }
-    .back-link:hover { gap: 12px; }
-  </style>
 </head>
 <body>
-  <div class="bg-fx" aria-hidden="true">
-    <div class="aurora a1"></div>
-    <div class="aurora a2"></div>
-    <div class="grid-overlay"></div>
-    <div class="noise"></div>
-  </div>
-  <nav class="nav scrolled">
-    <div class="nav-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-mark">A</span>
-        <span class="logo-text">Anjneya<strong>Tech</strong></span>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Anjneya Tech home">
+        <img src="assets/logo-96.png" width="36" height="36" alt="" />
+        <span>Anjneya <b>Tech</b></span>
       </a>
+      <a class="btn btn-sm btn-ghost" href="index.html#apps">Our apps</a>
     </div>
-  </nav>
+  </header>
 
-  <div class="policy-page">
-    <a href="index.html" class="back-link">← Back to Home</a>
+  <main id="main" class="container doc">
+    <a href="index.html" class="back">← Back to home</a>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: June 2025</p>
+    <p class="updated">Last updated: October 2026</p>
 
     <p>Anjneya Tech ("we", "us", or "our") operates mobile applications available on the Google Play Store. This Privacy Policy explains how we collect, use, and protect information when you use our apps.</p>
 
@@ -52,8 +42,8 @@
     </ul>
 
     <h2>2. Advertising</h2>
-    <p>Our apps display advertisements served by Google AdMob. AdMob may collect device identifiers and usage data to serve relevant ads. For more information, please review <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
-    <p>We participate in the IAB Tech Lab's app-ads.txt program to ensure ads are served through authorized channels. You can view our <a href="/app-ads.txt">app-ads.txt file here</a>.</p>
+    <p>Our apps display advertisements served by Google AdMob. AdMob may collect device identifiers and usage data to serve relevant ads. For more information, please review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
+    <p>We participate in the IAB Tech Lab's app-ads.txt program to ensure ads are served through authorized channels. You can view our <a href="app-ads.txt">app-ads.txt file here</a>.</p>
 
     <h2>3. Children's Privacy</h2>
     <p>Our games are intended for general audiences. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected such information, please contact us immediately.</p>
@@ -68,11 +58,20 @@
     </ul>
 
     <h2>6. Your Rights</h2>
-    <p>You may opt out of personalized advertising through your device settings (Settings → Google → Ads → Opt out of Ads Personalization).</p>
+    <p>You may opt out of personalized advertising through your device settings (Settings → Google → Ads → Opt out of Ads Personalization). To request deletion of any data associated with our apps, see <a href="delete-account.html">Account &amp; Data Deletion</a>.</p>
 
     <h2>7. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-    <p><a href="mailto:contact@anjneyatech.com">contact@anjneyatech.com</a></p>
-  </div>
+    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:anjneyatech@gmail.com">anjneyatech@gmail.com</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav aria-label="Legal">
+        <a href="index.html">Home</a>
+        <a href="delete-account.html">Account &amp; Data Deletion</a>
+      </nav>
+      <p>© 2026 Anjneya Tech</p>
+    </div>
+  </footer>
 </body>
 </html>
