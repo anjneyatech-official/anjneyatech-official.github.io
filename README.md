@@ -1,4 +1,4 @@
-# Anjneya Tech — Official Website
+# Anjneya Tech - Official Website
 
 Static site for Anjneya Tech, served by GitHub Pages at https://anjneyatech-official.github.io/
 
@@ -10,22 +10,23 @@ Static site for Anjneya Tech, served by GitHub Pages at https://anjneyatech-offi
 | `privacy.html` | Privacy policy |
 | `delete-account.html` | AdLens account & data deletion (Google Play requirement) |
 | `404.html` | Not-found page |
-| `style.css` | All styles (light/dark via `prefers-color-scheme`) |
-| `main.js` | Mobile menu and app filters (site works without JS) |
-| `assets/` | Logo, favicons and app icons (self-hosted) |
+| `style.css` | All styles (light/dark via `prefers-color-scheme`, design rules at the top) |
+| `main.js` | Mobile menu, scroll entrance, active nav link (site works without JS) |
+| `assets/` | Logo, favicons, app icons, Play Store screenshots and the Geist font (OFL, licence included) |
 | `app-ads.txt` | Google AdMob app-ads.txt (IAB Tech Lab spec) |
 | `robots.txt`, `sitemap.xml` | Search engine hints |
 
 ## Adding a new app
 
-1. Save the Play Store icon as `assets/icons/<name>.webp` (256×256).
-2. Copy an existing `<li class="app-card">` in `index.html` into the right group (apps or games) and update the text and Play link.
-3. Update the counts in the filter buttons and hero stats.
+1. Save the app icon as `assets/icons/<name>-128.webp` and a Play Store screenshot as `assets/shots/<name>.jpg` (JPEG, quality ~70).
+2. Tools: copy an `<a class="tile">` block in `index.html` and give it a grid area in `.bento` (`style.css`). Games: copy an `<li>` in `.posters`.
+3. Update the numbers in the facts strip.
+4. Keep copy free of em dashes and only claim what the Play listing says.
 
 ## Security
 
 - No third-party scripts, fonts or trackers; every asset is served from this domain.
-- A strict Content-Security-Policy meta tag on every page — avoid inline `<script>`, `style="…"` attributes and `on*=` handlers, or the browser will block them.
+- A strict Content-Security-Policy meta tag on every page - avoid inline `<script>`, `style="…"` attributes and `on*=` handlers, or the browser will block them.
 - External links use `rel="noopener noreferrer"`.
 
 ## Contact

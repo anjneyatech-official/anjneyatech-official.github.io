@@ -5,27 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>Anjneya Tech — Private, offline-first Android apps &amp; puzzle games</title>
-  <meta name="description" content="Independent studio making lightweight, privacy-respecting Android apps and puzzle games — OpenAny, QRino, CleanShare, OneCalc, Inkroad and more." />
+  <title>Anjneya Tech | Android apps and puzzle games</title>
+  <meta name="description" content="Independent studio making lightweight, privacy-respecting Android apps and puzzle games: OpenAny, QRino, CleanShare, OneCalc, Inkroad and more." />
   <link rel="canonical" href="https://anjneyatech-official.github.io/" />
-  <meta name="theme-color" content="#0a1433" />
+  <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0c0f14" media="(prefers-color-scheme: dark)" />
   <meta name="color-scheme" content="light dark" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Anjneya Tech" />
-  <meta property="og:title" content="Anjneya Tech — Private, offline-first Android apps &amp; games" />
-  <meta property="og:description" content="Lightweight, privacy-respecting Android apps and puzzle games from an independent studio." />
+  <meta property="og:title" content="Anjneya Tech | Android apps and puzzle games" />
+  <meta property="og:description" content="Small Android apps that do one job well. Offline-first tools and puzzle games from an independent studio." />
   <meta property="og:url" content="https://anjneyatech-official.github.io/" />
   <meta property="og:image" content="https://anjneyatech-official.github.io/assets/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Anjneya Tech — small, private, well-made apps. App icons for OpenAny, QRino, Inkroad and more." />
+  <meta property="og:image:alt" content="Anjneya Tech app icons for OpenAny, QRino, Inkroad and more." />
   <meta property="og:locale" content="en_IN" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Anjneya Tech — Private, offline-first Android apps &amp; games" />
-  <meta name="twitter:description" content="Lightweight, privacy-respecting Android apps and puzzle games from an independent studio." />
+  <meta name="twitter:title" content="Anjneya Tech | Android apps and puzzle games" />
+  <meta name="twitter:description" content="Small Android apps that do one job well. Offline-first tools and puzzle games from an independent studio." />
   <meta name="twitter:image" content="https://anjneyatech-official.github.io/assets/og-image.jpg" />
   <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="style.css" />
   <script type="application/ld+json">
   {
@@ -43,255 +45,181 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Anjneya Tech home">
-        <img src="assets/logo-96.png" width="36" height="36" alt="" />
-        <span>Anjneya <b>Tech</b></span>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a href="#main" class="brand" aria-label="Anjneya Tech, back to top">
+        <img src="assets/logo-96.png" width="32" height="32" alt="" />
+        <span>Anjneya Tech</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <span></span><span></span>
-      </button>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Main">
-        <a href="#apps">Apps</a>
-        <a href="#principles">Principles</a>
-        <a href="#about">Studio</a>
+        <a href="#apps">Tools</a>
+        <a href="#games">Games</a>
+        <a href="#principles">How we build</a>
         <a href="#contact">Contact</a>
-        <a class="btn btn-sm btn-primary" href="https://play.google.com/store/apps/dev?id=4810421852702262741" rel="noopener noreferrer" target="_blank">Google Play</a>
+        <a class="btn btn-solid btn-sm" href="https://play.google.com/store/apps/dev?id=4810421852702262741" target="_blank" rel="noopener noreferrer"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M239.82,114.19,72,18.16a16,16,0,0,0-16.12,0A15.68,15.68,0,0,0,48,31.87V224.13a15.68,15.68,0,0,0,7.92,13.67,16,16,0,0,0,16.12,0l167.78-96a15.75,15.75,0,0,0,0-27.62ZM64,212.67V43.33L148.69,128Zm96-73.36,18.92,18.92-88.5,50.66ZM90.4,47.1l88.53,50.67L160,116.69ZM193.31,150l-22-22,22-22,38.43,22Z"/></svg>View on Google Play</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container hero-inner">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Independent Android studio</p>
-          <h1>Small, private, <span class="grad nowrap">well&#8209;made</span> apps.</h1>
-          <p class="lede">We build lightweight Android tools and puzzle games that do one job well — most work fully offline, need no account, and keep your files on your device.</p>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#apps">Explore our apps</a>
-            <a class="btn btn-ghost" href="https://play.google.com/store/apps/dev?id=4810421852702262741" rel="noopener noreferrer" target="_blank">View on Google Play <span aria-hidden="true">↗</span></a>
+          <h1 id="hero-title">Small apps that do one job well.</h1>
+          <p class="hero-sub">Offline-first tools and puzzle games. Your files stay on your phone, and most apps need no account.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#apps">Browse the apps</a>
+            <a class="link-arrow" href="https://play.google.com/store/apps/dev?id=4810421852702262741" target="_blank" rel="noopener noreferrer">View on Google Play <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></a>
           </div>
-          <dl class="stats">
-            <div><dt>Apps &amp; games</dt><dd>10</dd></div>
-            <div><dt>Downloads</dt><dd>1,000+</dd></div>
-            <div><dt>Top rating</dt><dd>5.0<span aria-hidden="true">★</span></dd></div>
-          </dl>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <img src="assets/icons/openany.webp" alt="" width="96" height="96" />
-          <img src="assets/icons/qrino.webp" alt="" width="96" height="96" />
-          <img src="assets/icons/inkroad.webp" alt="" width="96" height="96" />
-          <img src="assets/icons/metadataremover.webp" alt="" width="96" height="96" />
-          <img src="assets/icons/onecalc.webp" alt="" width="96" height="96" />
-          <img src="assets/icons/looptheloop.webp" alt="" width="96" height="96" />
-          <img src="assets/icons/slideout.webp" alt="" width="96" height="96" />
-          <img src="assets/icons/chessclockpro.webp" alt="" width="96" height="96" />
-          <img src="assets/icons/colorescape.webp" alt="" width="96" height="96" />
+        <div class="hero-media">
+          <img class="hm-main" src="assets/shots/hero-openany.jpg" width="1200" height="675" alt="OpenAny showing PDF, Word and Excel files on an Android phone" fetchpriority="high" />
+          <img class="hm-side" src="assets/shots/hero-loop.jpg" width="400" height="711" alt="Loop The Loop puzzle board on a phone" />
+          <img class="hm-low" src="assets/shots/hero-inkroad.jpg" width="800" height="450" alt="Inkroad level where a hand-drawn road carries a red car to the flag" />
         </div>
       </div>
     </section>
 
-    <section class="section spotlight-section" aria-labelledby="spotlight-title">
-      <div class="container spotlight">
-        <img class="spotlight-icon" src="assets/icons/openany.webp" alt="OpenAny app icon" width="128" height="128" loading="lazy" />
-        <div>
-          <p class="eyebrow">Most popular</p>
-          <h2 id="spotlight-title">OpenAny — open almost any file, offline.</h2>
-          <p>A tiny (~4&nbsp;MB) viewer for PDF, Word, Excel, PowerPoint, EPUB, archives, images, video, audio and code. No account, no ads, no trackers — your files never leave your phone.</p>
-          <ul class="checks">
-            <li>No storage permission needed</li>
-            <li>Rated 5.0 by 16 reviewers</li>
-            <li>1,000+ downloads</li>
-          </ul>
-          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.ajtech.openany" rel="noopener noreferrer" target="_blank">Get OpenAny on Google Play</a>
-        </div>
-      </div>
+    <section class="facts-band" aria-label="Studio at a glance">
+      <dl class="wrap facts">
+        <div><dt>apps and games on Google Play</dt><dd>10</dd></div>
+        <div><dt>downloads across the catalogue</dt><dd>1,000+</dd></div>
+        <div><dt>apps with no ads at all</dt><dd>6</dd></div>
+        <div><dt>Play rating for OpenAny and Slide Out</dt><dd>5.0</dd></div>
+      </dl>
     </section>
 
     <section class="section" id="apps" aria-labelledby="apps-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Portfolio</p>
-            <h2 id="apps-title">Our apps &amp; games</h2>
-          </div>
-          <div class="filters" role="group" aria-label="Filter apps">
-            <button type="button" data-filter="all" aria-pressed="true">All <span>10</span></button>
-            <button type="button" data-filter="app" aria-pressed="false">Apps <span>6</span></button>
-            <button type="button" data-filter="game" aria-pressed="false">Games <span>4</span></button>
-          </div>
-        </div>
+      <div class="wrap">
+        <header class="section-head reveal">
+          <h2 id="apps-title">Everyday tools</h2>
+          <p>Utilities for files, photos, QR codes and quick sums. They work offline and keep your data on the device.</p>
+        </header>
 
-        <div class="app-group" data-group="app">
-          <h3 class="group-title">Apps &amp; utilities</h3>
-        <ul class="app-grid">
-          <li class="app-card" data-type="app">
-            <div class="app-top"><img src="assets/icons/openany-128.webp" alt="" width="64" height="64" loading="lazy" />
-              <div><h4>OpenAny</h4><p class="app-sub">PDF &amp; Document Reader</p></div></div>
-            <p>Read PDF, Word, Excel, PowerPoint and photos offline in a ~4&nbsp;MB app.</p>
-            <ul class="tags"><li>Offline</li><li>No ads</li><li>No account</li></ul>
-            <div class="app-foot"><span class="meta">★ 5.0 · 1K+ downloads</span>
-              <a href="https://play.google.com/store/apps/details?id=com.ajtech.openany" rel="noopener noreferrer" target="_blank" aria-label="Get OpenAny on Google Play">Get it <span aria-hidden="true">→</span></a></div>
-          </li>
-          <li class="app-card" data-type="app">
-            <div class="app-top"><img src="assets/icons/qrino-128.webp" alt="" width="64" height="64" loading="lazy" />
-              <div><h4>QRino</h4><p class="app-sub">QR Code Scanner &amp; Maker</p></div></div>
-            <p>Scan and design custom QR codes with colours, logos, frames and 3D styles.</p>
-            <ul class="tags"><li>Offline</li><li>No ads</li></ul>
-            <div class="app-foot"><span class="meta">Productivity</span>
-              <a href="https://play.google.com/store/apps/details?id=com.ajtech.qrino" rel="noopener noreferrer" target="_blank" aria-label="Get QRino on Google Play">Get it <span aria-hidden="true">→</span></a></div>
-          </li>
-          <li class="app-card" data-type="app">
-            <div class="app-top"><img src="assets/icons/metadataremover-128.webp" alt="" width="64" height="64" loading="lazy" />
-              <div><h4>CleanShare</h4><p class="app-sub">EXIF &amp; GPS Remover</p></div></div>
-            <p>Strip GPS location and hidden metadata from photos, videos and documents before you share.</p>
-            <ul class="tags"><li>No internet access</li><li>No ads</li><li>No tracking</li></ul>
-            <div class="app-foot"><span class="meta">Privacy tool</span>
-              <a href="https://play.google.com/store/apps/details?id=com.ajtech.metadataremover" rel="noopener noreferrer" target="_blank" aria-label="Get CleanShare on Google Play">Get it <span aria-hidden="true">→</span></a></div>
-          </li>
-          <li class="app-card" data-type="app">
-            <div class="app-top"><img src="assets/icons/onecalc-128.webp" alt="" width="64" height="64" loading="lazy" />
-              <div><h4>OneCalc</h4><p class="app-sub">All-in-One Calculator</p></div></div>
-            <p>43 calculators in one: EMI, GST, SIP, scientific, unit converter, dates and more.</p>
-            <ul class="tags"><li>Offline</li><li>No ads</li><li>No account</li></ul>
-            <div class="app-foot"><span class="meta">Tools</span>
-              <a href="https://play.google.com/store/apps/details?id=com.ajtech.onecalc" rel="noopener noreferrer" target="_blank" aria-label="Get OneCalc on Google Play">Get it <span aria-hidden="true">→</span></a></div>
-          </li>
-          <li class="app-card" data-type="app">
-            <div class="app-top"><img src="assets/icons/chessclockpro-128.webp" alt="" width="64" height="64" loading="lazy" />
-              <div><h4>Chess Clock Pro</h4><p class="app-sub">Chess Timer</p></div></div>
-            <p>Tournament-ready timer: Fischer increment, Bronstein delay, byo-yomi and multi-stage controls.</p>
-            <ul class="tags"><li>Offline</li><li>No ads</li></ul>
-            <div class="app-foot"><span class="meta"><span class="new">New</span> Tools</span>
-              <a href="https://play.google.com/store/apps/details?id=com.ajtech.chessclockpro" rel="noopener noreferrer" target="_blank" aria-label="Get Chess Clock Pro on Google Play">Get it <span aria-hidden="true">→</span></a></div>
-          </li>
-          <li class="app-card" data-type="app">
-            <div class="app-top"><img src="assets/icons/adlens-128.webp" alt="" width="64" height="64" loading="lazy" />
-              <div><h4>AdLens</h4><p class="app-sub">AdMob Revenue Tracker</p></div></div>
-            <p>AdMob earnings, eCPM and CTR at a glance, with alerts — built for indie app publishers.</p>
-            <ul class="tags"><li>Data stays on device</li></ul>
-            <div class="app-foot"><span class="meta">Business</span>
-              <a href="https://play.google.com/store/apps/details?id=com.ajtech.adlens" rel="noopener noreferrer" target="_blank" aria-label="Get AdLens on Google Play">Get it <span aria-hidden="true">→</span></a></div>
-          </li>
-        </ul>
-        </div>
-        <div class="app-group" data-group="game">
-          <h3 class="group-title">Puzzle games</h3>
-        <ul class="app-grid app-grid-4">
-          <li class="app-card" data-type="game">
-            <div class="app-top"><img src="assets/icons/inkroad-128.webp" alt="" width="64" height="64" loading="lazy" />
-              <div><h4>Inkroad</h4><p class="app-sub">Draw Physics Puzzle</p></div></div>
-            <p>Draw a road, drive it, land the goal. 68 handcrafted levels across ten worlds — and it keeps going.</p>
-            <ul class="tags"><li>Offline</li><li>No ads</li></ul>
-            <div class="app-foot"><span class="meta">Puzzle game</span>
-              <a href="https://play.google.com/store/apps/details?id=com.ajtech.inkroad" rel="noopener noreferrer" target="_blank" aria-label="Get Inkroad on Google Play">Get it <span aria-hidden="true">→</span></a></div>
-          </li>
-          <li class="app-card" data-type="game">
-            <div class="app-top"><img src="assets/icons/looptheloop-128.webp" alt="" width="64" height="64" loading="lazy" />
-              <div><h4>Loop The Loop</h4><p class="app-sub">Logic Puzzle</p></div></div>
-            <p>Classic Slitherlink: every board has one unique solution. Pure deduction, no guessing.</p>
-            <ul class="tags"><li>Slitherlink</li><li>Logic</li></ul>
-            <div class="app-foot"><span class="meta">Puzzle game</span>
-              <a href="https://play.google.com/store/apps/details?id=com.ajtech.looptheloop" rel="noopener noreferrer" target="_blank" aria-label="Get Loop The Loop on Google Play">Get it <span aria-hidden="true">→</span></a></div>
-          </li>
-          <li class="app-card" data-type="game">
-            <div class="app-top"><img src="assets/icons/slideout-128.webp" alt="" width="64" height="64" loading="lazy" />
-              <div><h4>Slide Out</h4><p class="app-sub">Escape Puzzle</p></div></div>
-            <p>Tap arrows to slide them off the board. Simple rules, relaxing — and surprisingly tricky.</p>
-            <ul class="tags"><li>Relaxing</li><li>Brain teaser</li></ul>
-            <div class="app-foot"><span class="meta">★ 5.0 · Puzzle game</span>
-              <a href="https://play.google.com/store/apps/details?id=com.ajtech.slideout" rel="noopener noreferrer" target="_blank" aria-label="Get Slide Out on Google Play">Get it <span aria-hidden="true">→</span></a></div>
-          </li>
-          <li class="app-card" data-type="game">
-            <div class="app-top"><img src="assets/icons/colorescape-128.webp" alt="" width="64" height="64" loading="lazy" />
-              <div><h4>Color Escape</h4><p class="app-sub">Color Sort Puzzle</p></div></div>
-            <p>Sort coloured liquids into bottles across campaign levels and relaxing brain challenges.</p>
-            <ul class="tags"><li>Relaxing</li><li>Sorting</li></ul>
-            <div class="app-foot"><span class="meta">Puzzle game</span>
-              <a href="https://play.google.com/store/apps/details?id=com.axionix.colorescape" rel="noopener noreferrer" target="_blank" aria-label="Get Color Escape on Google Play">Get it <span aria-hidden="true">→</span></a></div>
-          </li>
-        </ul>
+        <div class="bento">
+          <a class="tile t-openany reveal" href="https://play.google.com/store/apps/details?id=com.ajtech.openany" target="_blank" rel="noopener noreferrer">
+            <img class="tile-img" src="assets/shots/openany.jpg" width="1100" height="619" alt="OpenAny file list with documents, sheets and slides" loading="lazy" />
+            <div class="tile-body">
+              <div class="tile-id"><img src="assets/icons/openany-128.webp" width="44" height="44" alt="" loading="lazy" /><div><h3>OpenAny</h3><p>PDF and document reader</p></div></div>
+              <p class="tile-desc">Opens PDF, Word, Excel, PowerPoint, EPUB, archives and more in an app of about 4 MB. Our most downloaded app, rated 5.0.</p>
+              <p class="tile-meta">Offline, no ads, no account</p>
+              <span class="tile-cta">Get on Google Play <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span>
+            </div>
+          </a>
+
+          <a class="tile t-clean tile-tall reveal" href="https://play.google.com/store/apps/details?id=com.ajtech.metadataremover" target="_blank" rel="noopener noreferrer">
+            <img class="tile-img" src="assets/shots/cleanshare.jpg" width="600" height="1067" alt="CleanShare removing hidden location data from a photo" loading="lazy" />
+            <div class="tile-body">
+              <div class="tile-id"><img src="assets/icons/metadataremover-128.webp" width="44" height="44" alt="" loading="lazy" /><div><h3>CleanShare</h3><p>EXIF and GPS remover</p></div></div>
+              <p class="tile-desc">Strips location and hidden metadata from photos, videos and documents before you share them.</p>
+              <p class="tile-meta">No internet permission, no ads</p>
+              <span class="tile-cta">Get on Google Play <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span>
+            </div>
+          </a>
+
+          <a class="tile t-qrino reveal" href="https://play.google.com/store/apps/details?id=com.ajtech.qrino" target="_blank" rel="noopener noreferrer">
+            <img class="tile-img" src="assets/shots/qrino.jpg" width="800" height="450" alt="QRino creating a custom QR code" loading="lazy" />
+            <div class="tile-body">
+              <div class="tile-id"><img src="assets/icons/qrino-128.webp" width="44" height="44" alt="" loading="lazy" /><div><h3>QRino</h3><p>QR code scanner and maker</p></div></div>
+              <p class="tile-desc">Scan codes, or design your own with colours, logos, frames and 3D styles.</p>
+              <p class="tile-meta">Offline, no ads</p>
+              <span class="tile-cta">Get on Google Play <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span>
+            </div>
+          </a>
+
+          <a class="tile t-onecalc reveal" href="https://play.google.com/store/apps/details?id=com.ajtech.onecalc" target="_blank" rel="noopener noreferrer">
+            <img class="tile-img" src="assets/shots/onecalc.jpg" width="800" height="450" alt="OneCalc home screen with calculator categories" loading="lazy" />
+            <div class="tile-body">
+              <div class="tile-id"><img src="assets/icons/onecalc-128.webp" width="44" height="44" alt="" loading="lazy" /><div><h3>OneCalc</h3><p>All-in-one calculator</p></div></div>
+              <p class="tile-desc">43 calculators in one place: EMI, GST, SIP, scientific, unit conversion and dates.</p>
+              <p class="tile-meta">Offline, no ads, no account</p>
+              <span class="tile-cta">Get on Google Play <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span>
+            </div>
+          </a>
+
+          <a class="tile t-chess reveal" href="https://play.google.com/store/apps/details?id=com.ajtech.chessclockpro" target="_blank" rel="noopener noreferrer">
+            <img class="tile-img" src="assets/shots/chessclock.jpg" width="1100" height="619" alt="Chess Clock Pro timer next to a chess board" loading="lazy" />
+            <div class="tile-body">
+              <div class="tile-id"><img src="assets/icons/chessclockpro-128.webp" width="44" height="44" alt="" loading="lazy" /><div><h3>Chess Clock Pro</h3><p>Chess timer</p></div></div>
+              <p class="tile-desc">A tournament-ready clock with Fischer increment, Bronstein delay, byo-yomi and multi-stage controls.</p>
+              <p class="tile-meta">Offline, no ads</p>
+              <span class="tile-cta">Get on Google Play <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span>
+            </div>
+          </a>
+
+          <a class="tile t-adlens reveal" href="https://play.google.com/store/apps/details?id=com.ajtech.adlens" target="_blank" rel="noopener noreferrer">
+            <img class="tile-img" src="assets/shots/adlens.jpg" width="600" height="1067" alt="AdLens revenue overview screen" loading="lazy" />
+            <div class="tile-body">
+              <div class="tile-id"><img src="assets/icons/adlens-128.webp" width="44" height="44" alt="" loading="lazy" /><div><h3>AdLens</h3><p>AdMob revenue tracker</p></div></div>
+              <p class="tile-desc">AdMob earnings, eCPM and CTR at a glance, with alerts for indie publishers.</p>
+              <p class="tile-meta">Reports stay on your device</p>
+              <span class="tile-cta">Get on Google Play <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="principles" aria-labelledby="principles-title">
-      <div class="container">
-        <div class="section-head center">
-          <div>
-            <p class="eyebrow">How we build</p>
-            <h2 id="principles-title">Principles in every release</h2>
-          </div>
-        </div>
+    <section class="section section-tint" id="games" aria-labelledby="games-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <h2 id="games-title">Puzzle games</h2>
+          <p>Logic, physics and sorting puzzles that fit into a few spare minutes.</p>
+        </header>
+        <ul class="posters">
+          <li class="reveal"><a class="poster" href="https://play.google.com/store/apps/details?id=com.ajtech.inkroad" target="_blank" rel="noopener noreferrer">
+            <img src="assets/shots/inkroad.jpg" width="800" height="450" alt="Inkroad level with a drawn road and a red car" loading="lazy" />
+            <h3>Inkroad</h3><p>Draw a road, then drive it. 68 handcrafted physics levels, no ads.</p>
+          </a></li>
+          <li class="reveal"><a class="poster" href="https://play.google.com/store/apps/details?id=com.ajtech.looptheloop" target="_blank" rel="noopener noreferrer">
+            <img src="assets/shots/loop.jpg" width="600" height="1067" alt="Loop The Loop level select screen" loading="lazy" />
+            <h3>Loop The Loop</h3><p>Slitherlink boards with one unique solution. Pure deduction.</p>
+          </a></li>
+          <li class="reveal"><a class="poster" href="https://play.google.com/store/apps/details?id=com.ajtech.slideout" target="_blank" rel="noopener noreferrer">
+            <img src="assets/shots/slideout.jpg" width="600" height="1067" alt="Slide Out board full of coloured arrows" loading="lazy" />
+            <h3>Slide Out</h3><p>Tap arrows to slide them off the board. Rated 5.0 on Google Play.</p>
+          </a></li>
+          <li class="reveal"><a class="poster" href="https://play.google.com/store/apps/details?id=com.axionix.colorescape" target="_blank" rel="noopener noreferrer">
+            <img src="assets/shots/colorescape.jpg" width="600" height="1067" alt="Color Escape bottle sorting level" loading="lazy" />
+            <h3>Color Escape</h3><p>Sort coloured liquids into bottles across a relaxing campaign.</p>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="principles" aria-labelledby="principles-title">
+      <div class="wrap principles-grid">
+        <h2 id="principles-title" class="reveal">How we build apps</h2>
         <ul class="principles">
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
-            <h3>Private by design</h3>
-            <p>Your files stay on your device, and most of our apps declare “No data collected” in their Google Play Data safety section.</p>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9a13 13 0 0118 0"/><path d="M6.5 12.5a8 8 0 0111 0"/><path d="M10 16a3 3 0 014 0"/><path d="M3 3l18 18"/></svg>
-            <h3>Offline-first</h3>
-            <p>Most of our apps work without an internet connection — on a plane, underground, anywhere.</p>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg>
-            <h3>Small &amp; fast</h3>
-            <p>Lean builds that install quickly, launch instantly and respect your storage and battery.</p>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 4v5h-5"/></svg>
-            <h3>Actively maintained</h3>
-            <p>Every app in our catalogue received updates in 2026. We fix issues and keep improving.</p>
-          </li>
+          <li class="reveal"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M72,128a134.63,134.63,0,0,1-14.16,60.47,8,8,0,1,1-14.32-7.12A118.8,118.8,0,0,0,56,128,71.73,71.73,0,0,1,83,71.8,8,8,0,1,1,93,84.29,55.76,55.76,0,0,0,72,128Zm56-8a8,8,0,0,0-8,8,184.12,184.12,0,0,1-23,89.1,8,8,0,0,0,14,7.76A200.19,200.19,0,0,0,136,128,8,8,0,0,0,128,120Zm0-32a40,40,0,0,0-40,40,8,8,0,0,0,16,0,24,24,0,0,1,48,0,214.09,214.09,0,0,1-20.51,92A8,8,0,1,0,146,226.83,230,230,0,0,0,168,128,40,40,0,0,0,128,88Zm0-64A104.11,104.11,0,0,0,24,128a87.76,87.76,0,0,1-5,29.33,8,8,0,0,0,15.09,5.33A103.9,103.9,0,0,0,40,128a88,88,0,0,1,176,0,282.24,282.24,0,0,1-5.29,54.45,8,8,0,0,0,6.3,9.4,8.22,8.22,0,0,0,1.55.15,8,8,0,0,0,7.84-6.45A298.37,298.37,0,0,0,232,128,104.12,104.12,0,0,0,128,24ZM94.4,152.17A8,8,0,0,0,85,158.42a151,151,0,0,1-17.21,45.44,8,8,0,0,0,13.86,8,166.67,166.67,0,0,0,19-50.25A8,8,0,0,0,94.4,152.17ZM128,56a72.85,72.85,0,0,0-9,.56,8,8,0,0,0,2,15.87A56.08,56.08,0,0,1,184,128a252.12,252.12,0,0,1-1.92,31A8,8,0,0,0,189,168a8.39,8.39,0,0,0,1,.06,8,8,0,0,0,7.92-7,266.48,266.48,0,0,0,2-33A72.08,72.08,0,0,0,128,56Zm57.93,128.25a8,8,0,0,0-9.75,5.75c-1.46,5.69-3.15,11.4-5,17a8,8,0,0,0,5,10.13,7.88,7.88,0,0,0,2.55.42,8,8,0,0,0,7.58-5.46c2-5.92,3.79-12,5.35-18.05A8,8,0,0,0,185.94,184.26Z"/></svg><h3>Private by design</h3><p>Files are processed on your phone. Most of our apps declare “No data collected” on Google Play.</p></li>
+          <li class="reveal"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M213.92,210.62a8,8,0,1,1-11.84,10.76l-52-57.15a60,60,0,0,0-57.41,7.24,8,8,0,1,1-9.42-12.93A75.43,75.43,0,0,1,128,144c1.28,0,2.55,0,3.82.1L104.9,114.49A108,108,0,0,0,61,135.31,8,8,0,0,1,49.73,134,8,8,0,0,1,51,122.77a124.27,124.27,0,0,1,41.71-21.66L69.37,75.4a155.43,155.43,0,0,0-40.29,24A8,8,0,0,1,18.92,87,171.87,171.87,0,0,1,58,62.86L42.08,45.38A8,8,0,1,1,53.92,34.62ZM128,192a12,12,0,1,0,12,12A12,12,0,0,0,128,192ZM237.08,87A172.3,172.3,0,0,0,106,49.4a8,8,0,1,0,2,15.87A158.33,158.33,0,0,1,128,64a156.25,156.25,0,0,1,98.92,35.37A8,8,0,0,0,237.08,87ZM195,135.31a8,8,0,0,0,11.24-1.3,8,8,0,0,0-1.3-11.24,124.25,124.25,0,0,0-51.73-24.2A8,8,0,1,0,150,114.24,108.12,108.12,0,0,1,195,135.31Z"/></svg><h3>Offline first</h3><p>Most of our apps work without a connection, on a flight or underground.</p></li>
+          <li class="reveal"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.28,34.75a64,64,0,0,0-90.49,0L60.69,104A15.9,15.9,0,0,0,56,115.31v73.38L26.34,218.34a8,8,0,0,0,11.32,11.32L67.32,200H140.7A15.92,15.92,0,0,0,152,195.32l0,0,69.23-70A64,64,0,0,0,221.28,34.75ZM142.07,46.06A48,48,0,0,1,211.79,112H155.33l34.35-34.34a8,8,0,0,0-11.32-11.32L120,124.69V67.87ZM72,115.35l32-31.67v57l-32,32ZM140.7,184H83.32l56-56h56.74Z"/></svg><h3>Small installs</h3><p>OpenAny is about 4 MB. Lean apps open fast and leave room on your phone.</p></li>
+          <li class="reveal"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48V96a8,8,0,0,1-8,8H168a8,8,0,0,1,0-16h28.69L182.06,73.37a79.56,79.56,0,0,0-56.13-23.43h-.45A79.52,79.52,0,0,0,69.59,72.71,8,8,0,0,1,58.41,61.27a96,96,0,0,1,135,.79L208,76.69V48a8,8,0,0,1,16,0ZM186.41,183.29a80,80,0,0,1-112.47-.66L59.31,168H88a8,8,0,0,0,0-16H40a8,8,0,0,0-8,8v48a8,8,0,0,0,16,0V179.31l14.63,14.63A95.43,95.43,0,0,0,130,222.06h.53a95.36,95.36,0,0,0,67.07-27.33,8,8,0,0,0-11.18-11.44Z"/></svg><h3>Kept up to date</h3><p>Every app in the catalogue received an update in 2026.</p></li>
         </ul>
       </div>
     </section>
 
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container about">
-        <div>
-          <p class="eyebrow">The studio</p>
-          <h2 id="about-title">Made with care by an independent team.</h2>
-        </div>
-        <div class="about-copy">
-          <p>Anjneya Tech is a small, independent mobile studio with a simple belief: a great app doesn't need to be complicated to be genuinely useful.</p>
-          <p>We pick everyday problems worth solving — reading files, sharing photos safely, quick calculations, a good puzzle on the commute — and build the lightest, most thoughtful app we can. No dark patterns, no clutter.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <div class="contact-card">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2 id="contact-title">Questions, feedback or partnerships?</h2>
-            <p>We read every message. For app support, include the app name and your Android version.</p>
-          </div>
-          <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:anjneyatech@gmail.com">anjneyatech@gmail.com</a>
-            <a class="btn btn-ghost" href="https://play.google.com/store/apps/dev?id=4810421852702262741" rel="noopener noreferrer" target="_blank">All apps on Google Play <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
+    <section class="section closing" id="contact" aria-labelledby="contact-title">
+      <div class="wrap closing-inner reveal" id="about">
+        <img src="assets/logo-96.png" width="56" height="56" alt="" loading="lazy" />
+        <h2 id="contact-title">Questions or feedback?</h2>
+        <p>Anjneya Tech is a small independent studio, and we read every email. For app support, include the app name and your Android version.</p>
+        <a class="btn btn-solid" href="mailto:anjneyatech@gmail.com"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg>anjneyatech@gmail.com</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <a href="#top" class="brand" aria-label="Back to top">
-        <img src="assets/logo-96.png" width="28" height="28" alt="" loading="lazy" />
-        <span>Anjneya <b>Tech</b></span>
-      </a>
+    <div class="wrap footer-row">
+      <p>© <span id="year">2026</span> Anjneya Tech</p>
       <nav aria-label="Legal">
         <a href="privacy.html">Privacy Policy</a>
-        <a href="delete-account.html">Account &amp; Data Deletion</a>
-        <a href="mailto:anjneyatech@gmail.com">Email</a>
+        <a href="delete-account.html">Account and data deletion</a>
+        <a href="https://play.google.com/store/apps/dev?id=4810421852702262741" target="_blank" rel="noopener noreferrer">View on Google Play</a>
       </nav>
-      <p>© <span id="year">2026</span> Anjneya Tech. Google Play is a trademark of Google LLC.</p>
+      <p class="fine">Google Play is a trademark of Google LLC.</p>
     </div>
   </footer>
 </body>
