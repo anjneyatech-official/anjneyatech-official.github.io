@@ -8,7 +8,8 @@ Static site for Anjneya Tech, served by GitHub Pages at https://anjneyatech-offi
 |------|---------|
 | `index.html` | Homepage: app catalogue, principles, studio, contact |
 | `privacy.html` | Privacy policy |
-| `delete-account.html` | AdLens account & data deletion (Google Play requirement) |
+| `terms.html` | Terms of Use |
+| `delete-account.html` | Account and data deletion for all apps (Google Play data deletion URL for AdLens) |
 | `404.html` | Not-found page |
 | `style.css` | All styles (light/dark via `prefers-color-scheme`, design rules at the top) |
 | `main.js` | Mobile menu, scroll entrance, active nav link (site works without JS) |

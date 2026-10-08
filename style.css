@@ -228,6 +228,54 @@ ul { margin: 0; padding: 0; list-style: none; }
 .notfound img { border-radius: 14px; margin-bottom: 24px; }
 .notfound p { margin-top: 12px; }
 
+/* ---------- Legal pages ---------- */
+.legal { padding-block: clamp(32px, 6vw, 64px) clamp(72px, 9vw, 112px); }
+.legal .back { display: inline-flex; gap: 6px; font-weight: 560; margin-bottom: 28px; }
+.legal-head { max-width: 760px; margin-bottom: clamp(36px, 5vw, 56px); }
+.legal-head h1 { font-size: clamp(2.2rem, 4.4vw, 3rem); }
+.legal-head .updated { margin-top: 10px; }
+.legal-head .callout { margin: 28px 0 0; }
+.legal-grid { display: grid; grid-template-columns: 220px minmax(0, 68ch); gap: clamp(40px, 6vw, 80px); align-items: start; }
+.toc { position: sticky; top: 92px; max-height: calc(100vh - 112px); overflow-y: auto; font-size: .9rem; }
+.toc summary { list-style: none; font-weight: 600; color: var(--ink); margin-bottom: 12px; cursor: pointer; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc ol { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--line); }
+.toc a { display: block; padding: 5px 0 5px 14px; margin-left: -1px; border-left: 1px solid transparent; color: var(--ink-3); line-height: 1.4; transition: color .2s, border-color .2s; }
+.toc a:hover { color: var(--ink); }
+.toc a[aria-current="true"] { color: var(--accent); border-left-color: var(--accent); }
+.legal-body section { scroll-margin-top: 92px; }
+.legal-body section + section { margin-top: 52px; }
+.legal-body h2 { font-size: 1.35rem; letter-spacing: -.02em; margin-bottom: 14px; }
+.legal-body h3 { font-size: 1.02rem; margin: 26px 0 8px; }
+.legal-body p, .legal-body li { color: var(--ink-2); }
+.legal-body p + p { margin-top: 14px; }
+.legal-body ul, .legal-body ol { padding-left: 1.25em; margin: 12px 0; }
+.legal-body ul { list-style: disc; }
+.legal-body ol { list-style: decimal; }
+.legal-body li { margin-bottom: 8px; padding-left: 4px; }
+.legal-body li::marker { color: var(--ink-3); }
+.legal-body strong { color: var(--ink); font-weight: 600; }
+.legal-body .btn { margin-top: 4px; }
+.legal-single { max-width: 68ch; }
+.notice-list p + p { margin-top: 18px; }
+.callout-strong { background: var(--surface); border-left: 3px solid var(--accent); }
+.callout-strong p + p { margin-top: 12px; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--r-md); margin: 18px 0; }
+.table-wrap table { width: 100%; border-collapse: collapse; font-size: .94rem; }
+.table-wrap th, .table-wrap td { text-align: left; vertical-align: top; padding: 12px 16px; border-bottom: 1px solid var(--line); color: var(--ink-2); }
+.table-wrap thead th { background: var(--tint); color: var(--ink); font-weight: 600; font-size: .85rem; }
+.table-wrap tbody th { color: var(--ink); font-weight: 600; white-space: nowrap; }
+.table-wrap tbody tr:last-child > * { border-bottom: 0; }
+
+@media (max-width: 900px) {
+  .legal-grid { grid-template-columns: 1fr; gap: 32px; }
+  .toc { position: static; max-height: none; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--surface); }
+  .toc summary { margin: 0; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; }
+  .toc summary::after { content: "+"; font-weight: 400; font-size: 1.2rem; color: var(--ink-3); }
+  .toc details[open] summary::after { content: "\2212"; }
+  .toc ol { margin: 0 18px 16px; }
+}
+
 /* ---------- Entrance motion (JS adds .js; content stays visible without it) ---------- */
 @media (prefers-reduced-motion: no-preference) {
   .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .8s var(--ease), transform .8s var(--ease); transition-delay: calc(var(--i, 0) * 70ms); }

@@ -19,7 +19,30 @@
     });
   }
 
+  /* Legal pages: contents list starts collapsed on small screens and closes after a pick */
+  const toc = document.querySelector('.toc details');
+  if (toc) {
+    const small = window.matchMedia('(max-width: 900px)');
+    if (small.matches) toc.removeAttribute('open');
+    toc.addEventListener('click', (e) => { if (e.target.closest('a') && small.matches) toc.removeAttribute('open'); });
+  }
+
   if (!('IntersectionObserver' in window)) return;
+
+  /* Legal pages: highlight the section being read */
+  const tocLinks = new Map();
+  document.querySelectorAll('.toc a[href^="#"]').forEach((a) => tocLinks.set(a.getAttribute('href').slice(1), a));
+  if (tocLinks.size) {
+    const tocSpy = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        tocLinks.forEach((a) => a.removeAttribute('aria-current'));
+        const link = tocLinks.get(entry.target.id);
+        if (link) link.setAttribute('aria-current', 'true');
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    tocLinks.forEach((_, id) => { const s = document.getElementById(id); if (s) tocSpy.observe(s); });
+  }
 
   /* Entrance on scroll, staggered within each parent */
   const items = document.querySelectorAll('.reveal');

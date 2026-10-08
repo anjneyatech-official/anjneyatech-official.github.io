@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Privacy Policy | Anjneya Tech</title>
-  <meta name="description" content="How Anjneya Tech apps and games handle your information." />
+  <meta name="description" content="How Anjneya Tech apps, games and website handle your information, and the choices you have." />
   <link rel="canonical" href="https://anjneyatech-official.github.io/privacy.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Anjneya Tech" />
@@ -18,7 +18,9 @@
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -32,63 +34,189 @@
     </div>
   </header>
 
-  <main id="main" class="wrap doc">
-    <a href="index.html" class="back">← Back to home</a>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 2026</p>
+  <main id="main" class="wrap legal">
+    <header class="legal-head">
+      <a href="index.html" class="back">← Back to home</a>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Effective 9 October 2026</p>
+      <div class="callout">
+        <p><strong>In short:</strong> our apps process your files and data on your device. We do not run servers that receive your personal data, we do not sell personal data, and we do not create accounts. Four apps show ads through Google AdMob, which collects some device data as explained in section 4.</p>
+      </div>
+    </header>
 
-    <p>This Privacy Policy applies to all apps and games published by Anjneya Tech ("we", "us", "our") on Google Play: OpenAny, QRino, CleanShare, OneCalc, Chess Clock Pro, AdLens, Inkroad, Loop The Loop, Slide Out and Color Escape.</p>
+    <div class="legal-grid">
+      <nav class="toc" aria-label="On this page">
+        <details open>
+          <summary>On this page</summary>
+          <ol>
+            <li><a href="#scope">Who we are</a></li>
+            <li><a href="#collect">Information we collect</a></li>
+            <li><a href="#apps">How each app handles data</a></li>
+            <li><a href="#ads">Advertising</a></li>
+            <li><a href="#third">Third-party services</a></li>
+            <li><a href="#permissions">Device permissions</a></li>
+            <li><a href="#legal">Legal bases</a></li>
+            <li><a href="#retention">Retention and deletion</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#transfers">International transfers</a></li>
+            <li><a href="#children">Children</a></li>
+            <li><a href="#rights">Your rights</a></li>
+            <li><a href="#regional">Regional information</a></li>
+            <li><a href="#website">This website</a></li>
+            <li><a href="#changes">Changes</a></li>
+            <li><a href="#contact">Contact and grievances</a></li>
+          </ol>
+        </details>
+      </nav>
 
-    <div class="callout">
-      <p><strong>In short:</strong> our apps do their work on your device. We don't run servers that collect your personal data, we never sell data, and six of our ten apps show no ads at all.</p>
+      <article class="legal-body">
+        <section id="scope">
+          <h2>1. Who we are and what this covers</h2>
+          <p>Anjneya Tech ("we", "us", "our") is an independent developer of mobile apps and games based in India. This policy applies to our apps and games on Google Play (OpenAny, QRino, CleanShare, OneCalc, Chess Clock Pro, AdLens, Inkroad, Loop The Loop, Slide Out and Color Escape), to any future app that links to it, and to this website (together, the "Services").</p>
+          <p>Anjneya Tech is the data controller, or "data fiduciary" under Indian law, for the limited personal data described here. Google acts as an independent controller for the data it collects through Google Play, Google Sign-In and Google AdMob.</p>
+        </section>
+
+        <section id="collect">
+          <h2>2. Information we collect</h2>
+          <p><strong>Content on your device.</strong> Files you open, photos you clean, QR codes you scan or create, calculations, settings and game progress are processed and stored on your device. We do not receive, upload or store this content.</p>
+          <p><strong>Messages you send us.</strong> If you email us, we receive your email address and anything you include. We use it only to reply and to keep a record of the conversation.</p>
+          <p><strong>Diagnostics from Google Play.</strong> If you allow your device to share usage and diagnostics data with Google, Google Play may give us aggregated crash and performance reports (Android vitals). These help us fix bugs and do not identify you to us.</p>
+          <p><strong>Advertising data.</strong> In ad-supported apps, Google AdMob collects certain device data to show and measure ads. We do not receive this data in a form that identifies you. See section 4.</p>
+          <p>We do not knowingly collect sensitive personal data such as health, financial account, biometric or precise location data. Values you type into calculators, such as loan amounts or body measurements, stay on your device.</p>
+        </section>
+
+        <section id="apps">
+          <h2>3. How each app handles data</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th scope="col">App</th><th scope="col">Ads</th><th scope="col">Data handling</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">OpenAny</th><td>No</td><td>Files are opened and shown on the device. If you open a file from a cloud provider such as Google Drive, that provider's terms and privacy policy apply to that connection.</td></tr>
+                <tr><th scope="row">QRino</th><td>No</td><td>Codes are scanned and generated on the device, and history is stored locally. A link inside a scanned code leads to a third-party website we do not control.</td></tr>
+                <tr><th scope="row">CleanShare</th><td>No</td><td>Metadata is read and removed on the device. The app does not request internet access.</td></tr>
+                <tr><th scope="row">OneCalc</th><td>No</td><td>Inputs and results stay on the device.</td></tr>
+                <tr><th scope="row">Chess Clock Pro</th><td>No</td><td>Settings and presets stay on the device.</td></tr>
+                <tr><th scope="row">AdLens</th><td>Yes</td><td>You sign in with Google so the app can read your own AdMob reports through Google's APIs. Reports, settings and sign-in tokens stay on your device and are not sent to us. See <a href="delete-account.html">Account and data deletion</a>.</td></tr>
+                <tr><th scope="row">Inkroad</th><td>No</td><td>Game progress stays on the device.</td></tr>
+                <tr><th scope="row">Loop The Loop</th><td>Yes</td><td>Game progress stays on the device. Ads by Google AdMob.</td></tr>
+                <tr><th scope="row">Slide Out</th><td>Yes</td><td>Game progress stays on the device. Ads by Google AdMob.</td></tr>
+                <tr><th scope="row">Color Escape</th><td>Yes</td><td>Game progress stays on the device. Ads by Google AdMob.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The Data safety section of each Google Play listing gives Google's standard summary for that app. If an app changes how it handles data, we will update this policy and that listing.</p>
+        </section>
+
+        <section id="ads">
+          <h2>4. Advertising</h2>
+          <p>AdLens, Loop The Loop, Slide Out and Color Escape show ads served by Google AdMob. To show, measure and cap ads and to prevent fraud, AdMob may collect device identifiers (such as the Android advertising ID), IP address, approximate location derived from the IP address, device and app information, and ad interactions. Google handles this data under its own policies: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">how Google uses information from apps that use its services</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+          <p>Where the law requires it, for example in the European Economic Area, the United Kingdom and Switzerland, ads are served in line with Google's EU User Consent Policy and you can choose whether to allow personalised ads. Anywhere, you can reset or delete your advertising ID, or opt out of personalised ads, in your device settings (usually Settings, Google, Ads, or Settings, Privacy, Ads).</p>
+          <p>We publish an <a href="app-ads.txt">app-ads.txt</a> file so that ads are sold only through sellers we have authorised. We do not choose or control individual ads. If you see one that seems inappropriate, tell us and we will report or block it.</p>
+        </section>
+
+        <section id="third">
+          <h2>5. Third-party services</h2>
+          <p>We use only these third-party services, each under its own privacy policy:</p>
+          <ul>
+            <li><strong>Google Play</strong> for distribution, updates and crash reports (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>)</li>
+            <li><strong>Google AdMob</strong> for ads in ad-supported apps (<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">how Google uses advertising data</a>)</li>
+            <li><strong>Google Sign-In and the AdMob API</strong> in AdLens only</li>
+            <li><strong>GitHub Pages</strong> to host this website (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>)</li>
+          </ul>
+          <p>Our apps may let you reach other websites, for example through a link in a QR code or a file. We are not responsible for the content or privacy practices of those websites.</p>
+        </section>
+
+        <section id="permissions">
+          <h2>6. Device permissions</h2>
+          <p>Our apps ask only for permissions needed for the features you use, for example the camera to scan a QR code in QRino. Android asks for your permission first, and you can review or revoke permissions at any time in your device settings. Revoking a permission may stop the related feature from working.</p>
+        </section>
+
+        <section id="legal">
+          <h2>7. Why we process data (legal bases)</h2>
+          <p>Where the GDPR, the UK GDPR or similar laws apply, we rely on:</p>
+          <ul>
+            <li><strong>Contract:</strong> to provide the app features you choose to use.</li>
+            <li><strong>Legitimate interests:</strong> to fix bugs and keep the Services secure using aggregated diagnostics, and to answer your messages.</li>
+            <li><strong>Consent:</strong> for personalised advertising where consent is required. You can withdraw it at any time; this does not affect earlier processing.</li>
+            <li><strong>Legal obligation:</strong> where the law requires us to keep or disclose information.</li>
+          </ul>
+          <p>Under India's Digital Personal Data Protection Act, 2023, we process personal data only for the purposes in this policy, based on your consent or on the legitimate uses that Act permits.</p>
+        </section>
+
+        <section id="retention">
+          <h2>8. Retention and deletion</h2>
+          <ul>
+            <li>Data on your device stays there until you delete it in the app, clear the app's storage, or uninstall the app.</li>
+            <li>Emails you send us are kept while we handle your request and for up to 24 months afterwards, unless the law requires longer. You can ask us to delete them sooner.</li>
+            <li>Data collected by Google is kept under Google's policies.</li>
+          </ul>
+          <p>To ask us to delete data, see <a href="delete-account.html">Account and data deletion</a> or email us.</p>
+        </section>
+
+        <section id="security">
+          <h2>9. Security</h2>
+          <p>Keeping data on your device rather than on our servers is our main safeguard. We also rely on the security features of Android and Google Play, and this website is served only over HTTPS. No method of storage or transmission is completely secure, so we cannot guarantee absolute security. Please keep your device updated and protected with a screen lock.</p>
+        </section>
+
+        <section id="transfers">
+          <h2>10. International transfers</h2>
+          <p>We do not transfer your personal data ourselves. Google and GitHub may process data in other countries, including the United States, using the safeguards described in their own policies, such as standard contractual clauses.</p>
+        </section>
+
+        <section id="children">
+          <h2>11. Children</h2>
+          <p>The Services are meant for a general audience and are not directed at children under 13, or under the minimum age in your country. We do not knowingly collect personal data from children. If you believe a child has sent us personal data, contact us and we will delete it. Where Indian law applies, we do not carry out tracking, behavioural monitoring or targeted advertising directed at children.</p>
+        </section>
+
+        <section id="rights">
+          <h2>12. Your rights and choices</h2>
+          <p>Depending on where you live, you may have the right to:</p>
+          <ul>
+            <li>access the personal data we hold about you and get a copy;</li>
+            <li>correct, update or complete it;</li>
+            <li>have it deleted;</li>
+            <li>object to or restrict processing, and withdraw consent;</li>
+            <li>data portability;</li>
+            <li>nominate someone to exercise your rights if you die or become incapacitated (India);</li>
+            <li>complain to a data protection authority or the Data Protection Board of India.</li>
+          </ul>
+          <p>Because we hold very little personal data, most requests are met by deleting app data on your device. For anything else, email us. We reply within 30 days and may first need to confirm your identity. We will not treat you differently for using your rights.</p>
+        </section>
+
+        <section id="regional">
+          <h2>13. Region-specific information</h2>
+          <p><strong>United States, including California.</strong> We do not sell personal information for money. In ad-supported apps, AdMob's use of device identifiers for targeted ads may count as "sharing" for cross-context behavioural advertising under some state laws. You can opt out by deleting or resetting your advertising ID, or turning off personalised ads, in your device settings. We do not knowingly sell or share personal information of consumers under 16, and we do not use sensitive personal information to infer characteristics about you.</p>
+          <p><strong>European Economic Area, United Kingdom and Switzerland.</strong> You have the rights in section 12 and may complain to your local supervisory authority.</p>
+          <p><strong>India.</strong> You have the rights given by the Digital Personal Data Protection Act, 2023. Please raise a grievance with us first, as described in section 16, before approaching the Data Protection Board of India.</p>
+        </section>
+
+        <section id="website">
+          <h2>14. This website</h2>
+          <p>This website uses no cookies, analytics, advertising or tracking scripts, and loads no content from third parties. It is hosted on GitHub Pages, and GitHub may log technical data such as IP addresses to secure and operate its service.</p>
+        </section>
+
+        <section id="changes">
+          <h2>15. Changes to this policy</h2>
+          <p>We may update this policy when our apps, the law or our practices change. We will post the new version here and update the effective date. If a change materially affects how we handle your personal data, we will tell you in the relevant app or its release notes and, where required, ask for your consent.</p>
+        </section>
+
+        <section id="contact">
+          <h2>16. Contact and grievances</h2>
+          <p>For privacy questions, requests or complaints, write to our Grievance Officer at <a href="mailto:anjneyatech@gmail.com?subject=Privacy%20request">anjneyatech@gmail.com</a> with the subject "Privacy request". We acknowledge grievances promptly and aim to resolve them within 30 days.</p>
+          <p>Anjneya Tech, India. See also our <a href="terms.html">Terms of Use</a>.</p>
+        </section>
+      </article>
     </div>
-
-    <h2>1. Information we collect</h2>
-    <p>We do not collect personal information for our own use. The files you open, photos you clean, calculations you make, QR codes you create and your game progress are processed and stored locally on your device. We do not operate servers that receive this data.</p>
-    <p>If you have chosen to share usage and diagnostics data with Google, Google Play may provide us with anonymous, aggregated crash and performance reports (Android vitals). These do not identify you and help us fix bugs.</p>
-
-    <h2>2. Advertising</h2>
-    <p><strong>Apps with ads:</strong> Loop The Loop, Slide Out, Color Escape and AdLens show ads served by Google AdMob. AdMob may collect device identifiers (such as your advertising ID) and usage data to serve and measure ads. See <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">how Google uses information from apps that use its services</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
-    <p><strong>Ad-free apps:</strong> OpenAny, QRino, CleanShare, OneCalc, Chess Clock Pro and Inkroad show no ads.</p>
-    <p>We publish an <a href="app-ads.txt">app-ads.txt</a> file (IAB Tech Lab standard) so ads are only served through authorised sellers.</p>
-
-    <h2>3. AdLens and Google Sign-In</h2>
-    <p>AdLens lets you sign in with your Google account to read your own AdMob reports through Google's APIs. Your reports, settings and sign-in tokens are stored only on your device and are never sent to us. You can revoke access at any time; see <a href="delete-account.html">Account and data deletion</a>.</p>
-
-    <h2>4. Permissions</h2>
-    <p>Our apps only request permissions needed for the features you use, for example camera access to scan a QR code in QRino. You can review or revoke permissions in your device's Settings at any time.</p>
-
-    <h2>5. Children's privacy</h2>
-    <p>Our apps and games are intended for general audiences. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
-
-    <h2>6. Third-party services</h2>
-    <ul>
-      <li>Google Play Services: app distribution, updates and crash reporting</li>
-      <li>Google AdMob: advertising (ad-supported apps only)</li>
-      <li>Google Sign-In: AdLens only</li>
-    </ul>
-
-    <h2>7. Your choices</h2>
-    <ul>
-      <li>Reset or delete your advertising ID, or opt out of personalised ads, in your device settings (Settings → Google → Ads, or Settings → Privacy → Ads).</li>
-      <li>Uninstalling an app removes all data it stored on your device.</li>
-      <li>To ask a question or request deletion of any data, see <a href="delete-account.html">Account and data deletion</a> or email us.</li>
-    </ul>
-
-    <h2>8. Changes to this policy</h2>
-    <p>If we change this policy, we will update the date at the top of this page. Significant changes will also be noted in the app's release notes.</p>
-
-    <h2>9. Contact us</h2>
-    <p>Anjneya Tech: <a href="mailto:anjneyatech@gmail.com">anjneyatech@gmail.com</a></p>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-row">
+      <p>© 2026 Anjneya Tech</p>
       <nav aria-label="Legal">
         <a href="index.html">Home</a>
+        <a href="terms.html">Terms of Use</a>
         <a href="delete-account.html">Account and data deletion</a>
       </nav>
-      <p>© 2026 Anjneya Tech</p>
     </div>
   </footer>
 </body>
