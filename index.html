@@ -3,301 +3,357 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anjneya Tech — Games That Fit Your Day</title>
-  <meta name="description" content="Anjneya Tech develops fun, lightweight mobile games for everyday play. Discover our collection of casual and daily-use games." />
+  <title>Anjneya Tech — Apps That Make Life Better</title>
+  <meta name="description" content="Anjneya Tech is a mobile app studio crafting fun, lightweight, and useful apps — from learning tools to puzzle games and privacy utilities." />
+  <meta name="theme-color" content="#07070b" />
+  <meta property="og:title" content="Anjneya Tech — Apps That Make Life Better" />
+  <meta property="og:description" content="A small studio building beautiful, lightweight mobile apps for everyday life." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- BACKGROUND -->
+  <div class="bg-fx" aria-hidden="true">
+    <div class="aurora a1"></div>
+    <div class="aurora a2"></div>
+    <div class="aurora a3"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise"></div>
+  </div>
+
   <!-- NAV -->
   <nav class="nav" id="navbar">
     <div class="nav-inner">
-      <a href="#" class="logo">
-        <span class="logo-icon">⚡</span>
+      <a href="#top" class="logo magnetic">
+        <span class="logo-mark">A</span>
         <span class="logo-text">Anjneya<strong>Tech</strong></span>
       </a>
       <ul class="nav-links">
-        <li><a href="#games">Games</a></li>
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#features">Why Us</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
+      <a href="https://play.google.com/store/apps/developer?id=Anjneya+Tech" target="_blank" rel="noopener" class="btn btn-primary btn-sm nav-cta magnetic">Get the Apps</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="nav-mobile" id="navMobile">
-      <a href="#games">Games</a>
+      <a href="#apps">Apps</a>
+      <a href="#features">Why Us</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
+      <a href="https://play.google.com/store/apps/developer?id=Anjneya+Tech" target="_blank" rel="noopener" class="btn btn-primary btn-full">Get the Apps</a>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg">
-      <div class="orb orb1"></div>
-      <div class="orb orb2"></div>
-      <div class="orb orb3"></div>
-      <div class="grid-overlay"></div>
-    </div>
-    <div class="hero-content">
-      <div class="badge">📱 Mobile Apps Studio</div>
-      <h1 class="hero-title">
-        Apps That<br />
-        <span class="accent">Make Life Better.</span>
-      </h1>
-      <p class="hero-sub">Anjneya Tech builds innovative mobile apps — from educational tools to productivity solutions. Discover apps that simplify your daily routine.</p>
-      <div class="hero-cta">
-        <a href="#games" class="btn btn-primary">Explore Games</a>
-        <a href="#about" class="btn btn-ghost">About Us</a>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="phone-mockup">
-        <div class="phone-screen">
-          <div class="game-preview">
-            <div class="app-grid-preview">
-              <span>🧩</span>
-              <span>🔤</span>
-              <span>🔒</span>
-              <span>⚡</span>
-              <span>🎮</span>
-              <span>📱</span>
-            </div>
-            <div class="game-label">Anjneya Tech</div>
+  <header class="hero" id="top">
+    <div class="spotlight" id="spotlight"></div>
+    <div class="hero-grid">
+      <div class="hero-content">
+        <span class="badge reveal">
+          <span class="badge-dot"></span> Mobile App Studio · India
+        </span>
+        <h1 class="hero-title reveal" data-delay="1">
+          Apps That
+          <span class="grad-text">Make Life Better.</span>
+        </h1>
+        <p class="hero-sub reveal" data-delay="2">
+          We're a small studio building lightweight, beautiful mobile apps —
+          from learning tools to puzzle games and privacy utilities.
+          Simple, fast, and made to fit your day.
+        </p>
+        <div class="hero-cta reveal" data-delay="3">
+          <a href="#apps" class="btn btn-primary magnetic">
+            Explore Apps
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#about" class="btn btn-ghost magnetic">About the Studio</a>
+        </div>
+        <div class="hero-meta reveal" data-delay="4">
+          <div class="avatars">
+            <span style="background:linear-gradient(135deg,#a78bfa,#6366f1)">🧩</span>
+            <span style="background:linear-gradient(135deg,#fbbf24,#fb7185)">🔤</span>
+            <span style="background:linear-gradient(135deg,#22d3ee,#3b82f6)">🔒</span>
           </div>
+          <p><strong>50,000+</strong> downloads &amp; counting on Google Play</p>
         </div>
       </div>
-      <div class="float-badge f1">🏆 3+ Apps</div>
-      <div class="float-badge f2">⭐ 4.6+ Rating</div>
-      <div class="float-badge f3">📲 Free to Install</div>
+
+      <div class="hero-visual reveal" data-delay="3">
+        <div class="phone tilt" id="phone">
+          <div class="phone-glow"></div>
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ph-statusbar">
+              <span>9:41</span>
+              <span class="ph-dots"><i></i><i></i><i></i></span>
+            </div>
+            <div class="ph-stage" id="phoneStage">
+              <!-- app slides injected by JS -->
+            </div>
+            <div class="ph-dock">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+        <div class="float-chip c1">⭐ 4.8 avg rating</div>
+        <div class="float-chip c2">⚡ Under 15&nbsp;MB</div>
+        <div class="float-chip c3">🔒 Privacy-first</div>
+      </div>
     </div>
-  </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Education</span><i>✦</i><span>Puzzle Games</span><i>✦</i><span>Privacy</span><i>✦</i>
+        <span>Productivity</span><i>✦</i><span>Offline-ready</span><i>✦</i><span>Lightweight</span><i>✦</i>
+        <span>Education</span><i>✦</i><span>Puzzle Games</span><i>✦</i><span>Privacy</span><i>✦</i>
+        <span>Productivity</span><i>✦</i><span>Offline-ready</span><i>✦</i><span>Lightweight</span><i>✦</i>
+      </div>
+    </div>
+  </header>
 
   <!-- STATS -->
   <section class="stats">
-    <div class="container">
-      <div class="stat-item">
-        <span class="stat-num" data-target="50000">0</span><span class="stat-plus">+</span>
+    <div class="container stats-row">
+      <div class="stat-item reveal">
+        <span class="stat-num" data-target="50000">0</span><span class="stat-suffix">+</span>
         <span class="stat-label">Downloads</span>
       </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
+      <div class="stat-item reveal" data-delay="1">
         <span class="stat-num" data-target="3">0</span>
         <span class="stat-label">Apps Published</span>
       </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="4">0</span><span class="stat-plus">.8★</span>
+      <div class="stat-item reveal" data-delay="2">
+        <span class="stat-num" data-target="4">0</span><span class="stat-suffix">.8★</span>
         <span class="stat-label">Avg. Rating</span>
       </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
-        <span class="stat-label">Free to Play</span>
+      <div class="stat-item reveal" data-delay="3">
+        <span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span>
+        <span class="stat-label">Free to Install</span>
       </div>
     </div>
   </section>
 
-  <!-- GAMES -->
-  <section class="games-section" id="games">
+  <!-- APPS -->
+  <section class="section apps-section" id="apps">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <span class="section-tag">Our Apps</span>
-        <h2>Apps You'll <span class="accent">Love</span></h2>
-        <p>Discover our collection of apps designed to educate, protect, and entertain.</p>
+        <h2>Apps You'll <span class="grad-text">Actually Love</span></h2>
+        <p>Three apps, one promise — useful, beautiful, and respectful of your time.</p>
       </div>
 
-      <div class="games-grid">
+      <div class="apps-grid">
 
-        <!-- App 1: Hexora -->
-        <div class="game-card featured">
-          <div class="card-glow"></div>
-          <div class="game-thumb" style="background: linear-gradient(135deg, #a855f7, #6366f1);">
-            <div class="game-icon-big">🧩</div>
+        <!-- Hexora -->
+        <article class="app-card tilt featured reveal">
+          <div class="card-sheen"></div>
+          <div class="app-thumb" style="--g1:#a855f7; --g2:#6366f1;">
+            <span class="app-glyph">🧩</span>
+            <span class="thumb-ring"></span>
           </div>
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="tag tag-new">⭐ Featured</span>
+          <div class="app-body">
+            <div class="app-tags">
+              <span class="tag tag-featured">★ Featured</span>
               <span class="tag">Puzzle</span>
             </div>
             <h3>Hexora: Hex Word Puzzle</h3>
-            <p>A unique hex-grid word puzzle game. Combine letters to form words on a hexagonal board. Challenge your vocabulary and strategy skills!</p>
-            <div class="card-meta">
-              <span>🎯 Puzzle</span>
-              <span>📱 Android</span>
-              <span>⭐ 4.5+</span>
+            <p>A fresh take on word puzzles on a hexagonal board. Chain letters, build words, and stretch your vocabulary one clever move at a time.</p>
+            <div class="app-meta">
+              <span>🎯 Puzzle</span><span>📱 Android</span><span>⭐ 4.5+</span>
             </div>
-            <div class="card-actions">
-              <a href="https://play.google.com/store/apps/details?id=com.hexora.ajtech" target="_blank" class="btn btn-primary btn-sm">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
-                Get on Play Store
-              </a>
-            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.hexora.ajtech" target="_blank" rel="noopener" class="btn btn-primary btn-sm btn-store">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
+              Get on Play Store
+            </a>
           </div>
-        </div>
+        </article>
 
-        <!-- App 2: AlphaLeap -->
-        <div class="game-card">
-          <div class="card-glow"></div>
-          <div class="game-thumb" style="background: linear-gradient(135deg, #f7c948, #ff6b35);">
-            <div class="game-icon-big">🔤</div>
+        <!-- AlphaLeap -->
+        <article class="app-card tilt reveal" data-delay="1">
+          <div class="card-sheen"></div>
+          <div class="app-thumb" style="--g1:#fbbf24; --g2:#fb7185;">
+            <span class="app-glyph">🔤</span>
+            <span class="thumb-ring"></span>
           </div>
-          <div class="card-body">
-            <div class="card-tags">
+          <div class="app-body">
+            <div class="app-tags">
               <span class="tag tag-hot">🔥 Popular</span>
               <span class="tag">Education</span>
             </div>
             <h3>AlphaLeap: ABC Learning</h3>
-            <p>Make learning fun for kids! ABC Learning app helps children learn alphabets, words, and basic concepts through interactive activities.</p>
-            <div class="card-meta">
-              <span>🎯 Education</span>
-              <span>📱 Android</span>
-              <span>⭐ 4.8+</span>
+            <p>Learning made playful. Kids pick up alphabets, words, and early concepts through bright, interactive activities they'll keep coming back to.</p>
+            <div class="app-meta">
+              <span>🎯 Education</span><span>📱 Android</span><span>⭐ 4.8+</span>
             </div>
-            <div class="card-actions">
-              <a href="https://play.google.com/store/apps/details?id=com.alphaleap.app" target="_blank" class="btn btn-primary btn-sm">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
-                Get on Play Store
-              </a>
-            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.alphaleap.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm btn-store">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
+              Get on Play Store
+            </a>
           </div>
-        </div>
+        </article>
 
-        <!-- App 3: Obscura -->
-        <div class="game-card">
-          <div class="card-glow"></div>
-          <div class="game-thumb" style="background: linear-gradient(135deg, #1a1d28, #2d3142);">
-            <div class="game-icon-big">🔒</div>
+        <!-- Obscura -->
+        <article class="app-card tilt reveal" data-delay="2">
+          <div class="card-sheen"></div>
+          <div class="app-thumb" style="--g1:#22d3ee; --g2:#3b82f6;">
+            <span class="app-glyph">🔒</span>
+            <span class="thumb-ring"></span>
           </div>
-          <div class="card-body">
-            <div class="card-tags">
+          <div class="app-body">
+            <div class="app-tags">
               <span class="tag">Privacy</span>
               <span class="tag">Utility</span>
             </div>
-            <h3>Obscura: Private Notes & Vault</h3>
-            <p>Keep your private notes secure! Obscura provides a secure vault for your sensitive information with encryption and privacy features.</p>
-            <div class="card-meta">
-              <span>🎯 Utility</span>
-              <span>📱 Android</span>
-              <span>⭐ 4.6+</span>
+            <h3>Obscura: Private Notes &amp; Vault</h3>
+            <p>A secure home for what matters. Store private notes behind encryption, lock your sensitive info away, and keep your peace of mind.</p>
+            <div class="app-meta">
+              <span>🎯 Utility</span><span>📱 Android</span><span>⭐ 4.6+</span>
             </div>
-            <div class="card-actions">
-              <a href="https://play.google.com/store/apps/details?id=com.obscura.app" target="_blank" class="btn btn-primary btn-sm">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
-                Get on Play Store
-              </a>
-            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.obscura.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm btn-store">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
+              Get on Play Store
+            </a>
           </div>
-        </div>
+        </article>
 
       </div>
     </div>
   </section>
 
-  <!-- SHOWCASE -->
-  <section class="demo-section">
+  <!-- FEATURES -->
+  <section class="section features-section" id="features">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Featured</span>
-        <h2>Explore <span class="accent">Our Apps</span></h2>
-        <p>Discover our collection of innovative apps on Google Play</p>
+      <div class="section-header reveal">
+        <span class="section-tag">Why Anjneya Tech</span>
+        <h2>Built Small. <span class="grad-text">Done Right.</span></h2>
+        <p>The details we sweat so you never have to think about them.</p>
       </div>
-      <div class="demo-wrapper">
-        <div class="app-showcase">
-          <div class="app-grid">
-            <div class="app-item">
-              <span class="app-icon">🧩</span>
-              <span class="app-name">Hexora</span>
-            </div>
-            <div class="app-item">
-              <span class="app-icon">🔤</span>
-              <span class="app-name">AlphaLeap</span>
-            </div>
-            <div class="app-item">
-              <span class="app-icon">🔒</span>
-              <span class="app-name">Obscura</span>
-            </div>
-          </div>
-          <a href="https://play.google.com/store/apps/developer?id=Anjneya+Tech" target="_blank" class="btn btn-primary">View All Apps on Play Store</a>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <span class="feature-icon">⚡</span>
+          <h3>Fast &amp; Lightweight</h3>
+          <p>Every app is tuned to launch instantly and stay under 15&nbsp;MB — no bloat, no waiting.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="1">
+          <span class="feature-icon">🔒</span>
+          <h3>Privacy-First</h3>
+          <p>Your data stays on your device. We collect the minimum and never sell what we don't take.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="2">
+          <span class="feature-icon">🎨</span>
+          <h3>Beautiful by Default</h3>
+          <p>Clean, modern interfaces that feel good to use — design is never an afterthought.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">📶</span>
+          <h3>Works Offline</h3>
+          <p>No connection? No problem. Our core experiences run fully offline, anywhere.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="1">
+          <span class="feature-icon">🆓</span>
+          <h3>Free to Install</h3>
+          <p>Download and start using in seconds. No paywalls between you and the good stuff.</p>
+        </div>
+        <div class="feature-card reveal" data-delay="2">
+          <span class="feature-icon">🔄</span>
+          <h3>Always Improving</h3>
+          <p>Regular updates driven by real feedback. We ship, we listen, we make it better.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="about-section" id="about">
+  <section class="section about-section" id="about">
     <div class="container about-grid">
-      <div class="about-visual">
-        <div class="about-card-stack">
-          <div class="acard acard1">🎮 Casual Games</div>
-          <div class="acard acard2">🧠 Brain Training</div>
-          <div class="acard acard3">📅 Daily Challenges</div>
-          <div class="acard acard4">⚡ Quick Sessions</div>
+      <div class="about-visual reveal">
+        <div class="about-orb">
+          <span class="orb-core">A</span>
+          <span class="orbit o1"><i>🧩</i></span>
+          <span class="orbit o2"><i>🔤</i></span>
+          <span class="orbit o3"><i>🔒</i></span>
         </div>
       </div>
-      <div class="about-text">
-        <span class="section-tag">About Anjneya Tech</span>
-        <h2>Small Studio. <span class="accent">Big Solutions.</span></h2>
-        <p>We're a passionate mobile app development studio focused on building innovative apps that solve real problems — from education to privacy.</p>
-        <p>Every app we release is designed with simplicity, functionality, and user experience in mind. We believe great apps don't need to be complicated to be useful.</p>
+      <div class="about-text reveal" data-delay="1">
+        <span class="section-tag">About the Studio</span>
+        <h2>Small Studio. <span class="grad-text">Big Care.</span></h2>
+        <p>Anjneya Tech is an independent mobile studio with a simple belief: a great app doesn't need to be complicated to be genuinely useful.</p>
+        <p>We pick problems worth solving — learning, focus, privacy, play — then build the lightest, most thoughtful app we can. No dark patterns, no clutter. Just craft.</p>
         <div class="about-values">
-          <div class="value-pill">🚀 Fast & Light</div>
+          <div class="value-pill">🚀 Fast &amp; Light</div>
           <div class="value-pill">🎨 Clean Design</div>
-          <div class="value-pill">🔒 Secure & Private</div>
-          <div class="value-pill">❤️ Made with Love</div>
+          <div class="value-pill">🔒 Secure &amp; Private</div>
+          <div class="value-pill">❤️ Made with Care</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact-section" id="contact">
+  <!-- CTA BAND -->
+  <section class="section cta-band-section">
     <div class="container">
-      <div class="section-header">
+      <div class="cta-band reveal">
+        <div class="cta-band-glow"></div>
+        <h2>Find your next favorite app.</h2>
+        <p>Browse the full Anjneya Tech collection on Google Play.</p>
+        <a href="https://play.google.com/store/apps/developer?id=Anjneya+Tech" target="_blank" rel="noopener" class="btn btn-light magnetic">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.2.11.43.17.67.17.27 0 .54-.07.78-.22l15.94-9.39c.45-.27.73-.75.73-1.27 0-.52-.28-1-.73-1.27L4.63.39C4.17.12 3.59.1 3.11.36 2.63.62 2.33 1.13 2.33 1.68v20.47c0 .55.3 1.06.85 1.61z"/></svg>
+          View All Apps on Play Store
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
         <span class="section-tag">Get In Touch</span>
-        <h2>Say <span class="accent">Hello</span></h2>
-        <p>Have feedback, a collaboration idea, or just want to chat about games?</p>
+        <h2>Say <span class="grad-text">Hello</span></h2>
+        <p>Feedback, a collaboration idea, or just want to chat? We'd love to hear from you.</p>
       </div>
       <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-item">
+        <div class="contact-info reveal">
+          <a class="contact-item" href="mailto:contact@anjneyatech.com">
             <span class="ci-icon">📧</span>
-            <div>
-              <strong>Email Us</strong>
-              <a href="mailto:contact@anjneyatech.com">contact@anjneyatech.com</a>
-            </div>
-          </div>
-          <div class="contact-item">
+            <div><strong>Email Us</strong><span>contact@anjneyatech.com</span></div>
+          </a>
+          <a class="contact-item" href="https://play.google.com/store/apps/developer?id=Anjneya+Tech" target="_blank" rel="noopener">
             <span class="ci-icon">📱</span>
-            <div>
-              <strong>Google Play</strong>
-              <a href="https://play.google.com/store/apps/developer?id=Anjneya+Tech" target="_blank">Anjneya Tech on Play Store</a>
-            </div>
-          </div>
-          <div class="contact-item">
+            <div><strong>Google Play</strong><span>Anjneya Tech on Play Store</span></div>
+          </a>
+          <a class="contact-item" href="/app-ads.txt">
             <span class="ci-icon">🌐</span>
-            <div>
-              <strong>Developer Policy</strong>
-              <a href="/app-ads.txt">app-ads.txt</a>
-            </div>
-          </div>
+            <div><strong>Developer Policy</strong><span>View app-ads.txt</span></div>
+          </a>
         </div>
-        <form class="contact-form" id="contactForm" onsubmit="handleForm(event)">
+        <form class="contact-form reveal" data-delay="1" id="contactForm">
           <div class="form-group">
-            <input type="text" placeholder="Your Name" required />
+            <input type="text" name="name" placeholder="Your Name" required />
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Your Email" required />
+            <input type="email" name="email" placeholder="Your Email" required />
           </div>
           <div class="form-group">
-            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <textarea rows="4" name="message" placeholder="Your Message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message 🚀</button>
-          <div class="form-success" id="formSuccess" style="display:none;">✅ Message sent! We'll get back to you soon.</div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">✅ Message sent! We'll get back to you soon.</div>
         </form>
       </div>
     </div>
@@ -307,20 +363,35 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo-icon">⚡</span>
-        <span class="logo-text">Anjneya<strong>Tech</strong></span>
-        <p>Apps That Matter.</p>
+        <a href="#top" class="logo">
+          <span class="logo-mark">A</span>
+          <span class="logo-text">Anjneya<strong>Tech</strong></span>
+        </a>
+        <p>Apps that fit your day.</p>
       </div>
-      <div class="footer-links">
-        <a href="#games">Games</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="/app-ads.txt">app-ads.txt</a>
-        <a href="privacy.html">Privacy Policy</a>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#apps">Apps</a>
+          <a href="#features">Why Us</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="/app-ads.txt">app-ads.txt</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get the Apps</h4>
+          <a href="https://play.google.com/store/apps/developer?id=Anjneya+Tech" target="_blank" rel="noopener">Google Play</a>
+          <a href="mailto:contact@anjneyatech.com">Email Us</a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Anjneya Tech. All rights reserved. Built with ❤️ in India.</p>
+      <p>© 2025 Anjneya Tech. All rights reserved.</p>
+      <p>Built with ❤️ in India.</p>
     </div>
   </footer>
 
