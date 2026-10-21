@@ -38,9 +38,9 @@
     <header class="legal-head">
       <a href="index.html" class="back">← Back to home</a>
       <h1>Privacy Policy</h1>
-      <p class="updated">Effective 9 October 2026</p>
+      <p class="updated">Effective 21 October 2026</p>
       <div class="callout">
-        <p><strong>In short:</strong> our apps process your files and data on your device. We do not run servers that receive your personal data, we do not sell personal data, and we do not create accounts. Four apps show ads through Google AdMob, which collects some device data as explained in section 4.</p>
+        <p><strong>In short:</strong> our apps process your files and data on your device. We do not run servers that receive your personal data, we do not sell personal data, and we do not create accounts. Four apps show ads through Google AdMob, which collects some device data as explained in section 5. UnHabit Pro can, if you choose, read health and fitness data from Health Connect on your device to complete your habits, as explained in section 4. That data is never sent to us.</p>
       </div>
     </header>
 
@@ -52,6 +52,7 @@
             <li><a href="#scope">Who we are</a></li>
             <li><a href="#collect">Information we collect</a></li>
             <li><a href="#apps">How each app handles data</a></li>
+            <li><a href="#health">Health data (UnHabit Pro)</a></li>
             <li><a href="#ads">Advertising</a></li>
             <li><a href="#third">Third-party services</a></li>
             <li><a href="#permissions">Device permissions</a></li>
@@ -72,17 +73,18 @@
       <article class="legal-body">
         <section id="scope">
           <h2>1. Who we are and what this covers</h2>
-          <p>Anjneya Tech ("we", "us", "our") is an independent developer of mobile apps and games based in India. This policy applies to our apps and games on Google Play (OpenAny, QRino, CleanShare, OneCalc, Chess Clock Pro, AdLens, Inkroad, Loop The Loop, Slide Out and Color Escape), to any future app that links to it, and to this website (together, the "Services").</p>
+          <p>Anjneya Tech ("we", "us", "our") is an independent developer of mobile apps and games based in India. This policy applies to our apps and games on Google Play (OpenAny, QRino, CleanShare, OneCalc, Chess Clock Pro, AdLens, UnHabit Pro and its Wear OS companion, Inkroad, Loop The Loop, Slide Out and Color Escape), to any future app that links to it, and to this website (together, the "Services").</p>
           <p>Anjneya Tech is the data controller, or "data fiduciary" under Indian law, for the limited personal data described here. Google acts as an independent controller for the data it collects through Google Play, Google Sign-In and Google AdMob.</p>
         </section>
 
         <section id="collect">
           <h2>2. Information we collect</h2>
-          <p><strong>Content on your device.</strong> Files you open, photos you clean, QR codes you scan or create, calculations, settings and game progress are processed and stored on your device. We do not receive, upload or store this content.</p>
+          <p><strong>Content on your device.</strong> Files you open, photos you clean, QR codes you scan or create, calculations, habits and check-ins, settings and game progress are processed and stored on your device. We do not receive, upload or store this content.</p>
+          <p><strong>Health and fitness data (UnHabit Pro only).</strong> If you link a habit to Health Connect, UnHabit Pro accesses and reads your daily totals of steps, sleep, exercise, hydration and mindfulness, as you choose. The app uses this data only to complete your habits, stores the totals on your device as part of your habit history, and never sends it to us or anyone else. See section 4.</p>
           <p><strong>Messages you send us.</strong> If you email us, we receive your email address and anything you include. We use it only to reply and to keep a record of the conversation.</p>
           <p><strong>Diagnostics from Google Play.</strong> If you allow your device to share usage and diagnostics data with Google, Google Play may give us aggregated crash and performance reports (Android vitals). These help us fix bugs and do not identify you to us.</p>
-          <p><strong>Advertising data.</strong> In ad-supported apps, Google AdMob collects certain device data to show and measure ads. We do not receive this data in a form that identifies you. See section 4.</p>
-          <p>We do not knowingly collect sensitive personal data such as health, financial account, biometric or precise location data. Values you type into calculators, such as loan amounts or body measurements, stay on your device.</p>
+          <p><strong>Advertising data.</strong> In ad-supported apps, Google AdMob collects certain device data to show and measure ads. We do not receive this data in a form that identifies you. See section 5.</p>
+          <p>Apart from the optional Health Connect access in UnHabit Pro described above, our apps do not access sensitive personal data such as health, financial account, biometric or precise location data. We never receive any of it. Values you type into calculators, such as loan amounts or body measurements, stay on your device.</p>
         </section>
 
         <section id="apps">
@@ -97,6 +99,7 @@
                 <tr><th scope="row">OneCalc</th><td>No</td><td>Inputs and results stay on the device.</td></tr>
                 <tr><th scope="row">Chess Clock Pro</th><td>No</td><td>Settings and presets stay on the device.</td></tr>
                 <tr><th scope="row">AdLens</th><td>Yes</td><td>You sign in with Google so the app can read your own AdMob reports through Google's APIs. Reports, settings and sign-in tokens stay on your device and are not sent to us. See <a href="delete-account.html">Account and data deletion</a>.</td></tr>
+                <tr><th scope="row">UnHabit Pro</th><td>No</td><td>Habits, check-ins, notes and settings stay on the device. The app does not request internet access. Optional, read-only Health Connect access fills in linked habits (see section 4). Data leaves the device only through copies you choose to make: Android backup, backup or sync folders you pick, exports, and a paired Wear OS watch, which receives only today's habit names, colours and done status.</td></tr>
                 <tr><th scope="row">Inkroad</th><td>No</td><td>Game progress stays on the device.</td></tr>
                 <tr><th scope="row">Loop The Loop</th><td>Yes</td><td>Game progress stays on the device. Ads by Google AdMob.</td></tr>
                 <tr><th scope="row">Slide Out</th><td>Yes</td><td>Game progress stays on the device. Ads by Google AdMob.</td></tr>
@@ -107,46 +110,81 @@
           <p>The Data safety section of each Google Play listing gives Google's standard summary for that app. If an app changes how it handles data, we will update this policy and that listing.</p>
         </section>
 
+        <section id="health">
+          <h2>4. Health data (UnHabit Pro)</h2>
+          <p>UnHabit Pro can complete a measurable habit automatically using data from Health Connect, Android's on-device store for health and fitness data. This is optional and off by default. No other Anjneya Tech app accesses health data.</p>
+          <h3>What we access and why</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th scope="col">Health Connect permission</th><th scope="col">Data read</th><th scope="col">Used for</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Steps</th><td>Daily step total</td><td>Completing a habit such as "Walk 8,000 steps"</td></tr>
+                <tr><th scope="row">Sleep</th><td>Total sleep minutes, counted for the day the sleep ends</td><td>Completing a sleep habit</td></tr>
+                <tr><th scope="row">Exercise</th><td>Total exercise minutes for the day</td><td>Completing an exercise habit</td></tr>
+                <tr><th scope="row">Hydration</th><td>Total water in millilitres for the day</td><td>Completing a water habit</td></tr>
+                <tr><th scope="row">Mindfulness</th><td>Total mindfulness minutes for the day, where Health Connect supports it</td><td>Completing a meditation habit</td></tr>
+                <tr><th scope="row">Read health data in the background</th><td>The same daily totals, while the app is closed</td><td>Keeping widgets, tiles and reminders up to date. Requested only where supported</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>How it is collected, used and stored</h3>
+          <ul>
+            <li>The app asks for a permission only when you link that type of data to a habit. You can decline, and the habit stays manual.</li>
+            <li>Access is read-only. The app never writes, changes or deletes data in Health Connect.</li>
+            <li>The app reads only daily totals for today and yesterday, about once an hour and when the app starts. It does not read individual records, heart rate, location or any other health data type.</li>
+            <li>Each total is saved on your device as that habit's value for the day, as if you had typed it. A day you marked as skipped or failed is never overwritten.</li>
+            <li>UnHabit Pro has no internet permission, no ads and no analytics. Health data is never sent to us or to any third party. It is never sold, and never used for advertising, profiling, credit or insurance decisions, or any purpose other than filling in your linked habits.</li>
+            <li>Saved values become part of your habit history. They are included in copies that you choose to make, such as Android backup, backup or sync folders and exports, like values you enter by hand. Health values are never sent to your watch.</li>
+          </ul>
+          <h3>Your control</h3>
+          <p>You can revoke access at any time in Health Connect's settings, or set the habit back to manual. When no habit uses Health Connect, the app gives back its permissions. Values already logged stay in your habit history until you edit or delete them, clear the app's storage or uninstall the app.</p>
+          <p><strong>The use of information received from Health Connect will adhere to the Health Connect Permissions policy, including the Limited Use requirements.</strong></p>
+        </section>
+
         <section id="ads">
-          <h2>4. Advertising</h2>
+          <h2>5. Advertising</h2>
           <p>AdLens, Loop The Loop, Slide Out and Color Escape show ads served by Google AdMob. To show, measure and cap ads and to prevent fraud, AdMob may collect device identifiers (such as the Android advertising ID), IP address, approximate location derived from the IP address, device and app information, and ad interactions. Google handles this data under its own policies: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">how Google uses information from apps that use its services</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
           <p>Where the law requires it, for example in the European Economic Area, the United Kingdom and Switzerland, ads are served in line with Google's EU User Consent Policy and you can choose whether to allow personalised ads. Anywhere, you can reset or delete your advertising ID, or opt out of personalised ads, in your device settings (usually Settings, Google, Ads, or Settings, Privacy, Ads).</p>
           <p>We publish an <a href="app-ads.txt">app-ads.txt</a> file so that ads are sold only through sellers we have authorised. We do not choose or control individual ads. If you see one that seems inappropriate, tell us and we will report or block it.</p>
         </section>
 
         <section id="third">
-          <h2>5. Third-party services</h2>
+          <h2>6. Third-party services</h2>
           <p>We use only these third-party services, each under its own privacy policy:</p>
           <ul>
             <li><strong>Google Play</strong> for distribution, updates and crash reports (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>)</li>
             <li><strong>Google AdMob</strong> for ads in ad-supported apps (<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">how Google uses advertising data</a>)</li>
             <li><strong>Google Sign-In and the AdMob API</strong> in AdLens only</li>
+            <li><strong>Health Connect</strong> in UnHabit Pro only, if you link a habit to it. It runs on your device and the data it holds is managed in Health Connect itself</li>
+            <li><strong>Google Play services (Wear OS Data Layer)</strong> in UnHabit Pro only, if you use the watch app. It connects your phone and paired watch and may relay data through Google's servers when they are not near each other</li>
+            <li><strong>Android backup</strong> by Google, if you turned it on in your device settings, which may copy app data to your Google account</li>
             <li><strong>GitHub Pages</strong> to host this website (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>)</li>
           </ul>
           <p>Our apps may let you reach other websites, for example through a link in a QR code or a file. We are not responsible for the content or privacy practices of those websites.</p>
         </section>
 
         <section id="permissions">
-          <h2>6. Device permissions</h2>
-          <p>Our apps ask only for permissions needed for the features you use, for example the camera to scan a QR code in QRino. Android asks for your permission first, and you can review or revoke permissions at any time in your device settings. Revoking a permission may stop the related feature from working.</p>
+          <h2>7. Device permissions</h2>
+          <p>Our apps ask only for permissions needed for the features you use, for example the camera to scan a QR code in QRino, or Health Connect read access to steps, sleep, exercise, hydration and mindfulness in UnHabit Pro (section 4). Android asks for your permission first, and you can review or revoke permissions at any time in your device settings. Revoking a permission may stop the related feature from working.</p>
         </section>
 
         <section id="legal">
-          <h2>7. Why we process data (legal bases)</h2>
+          <h2>8. Why we process data (legal bases)</h2>
           <p>Where the GDPR, the UK GDPR or similar laws apply, we rely on:</p>
           <ul>
             <li><strong>Contract:</strong> to provide the app features you choose to use.</li>
             <li><strong>Legitimate interests:</strong> to fix bugs and keep the Services secure using aggregated diagnostics, and to answer your messages.</li>
-            <li><strong>Consent:</strong> for personalised advertising where consent is required. You can withdraw it at any time; this does not affect earlier processing.</li>
+            <li><strong>Consent:</strong> for personalised advertising where consent is required, and for reading health data in UnHabit Pro, which is your explicit consent given through Health Connect's permission screen. You can withdraw it at any time; this does not affect earlier processing.</li>
             <li><strong>Legal obligation:</strong> where the law requires us to keep or disclose information.</li>
           </ul>
           <p>Under India's Digital Personal Data Protection Act, 2023, we process personal data only for the purposes in this policy, based on your consent or on the legitimate uses that Act permits.</p>
         </section>
 
         <section id="retention">
-          <h2>8. Retention and deletion</h2>
+          <h2>9. Retention and deletion</h2>
           <ul>
-            <li>Data on your device stays there until you delete it in the app, clear the app's storage, or uninstall the app.</li>
+            <li>Data on your device stays there until you delete it in the app, clear the app's storage, or uninstall the app. This includes health totals saved to UnHabit Pro habits.</li>
+            <li>Copies you make yourself, such as backup files, exports or Android backup, stay until you delete them where they are stored.</li>
             <li>Emails you send us are kept while we handle your request and for up to 24 months afterwards, unless the law requires longer. You can ask us to delete them sooner.</li>
             <li>Data collected by Google is kept under Google's policies.</li>
           </ul>
@@ -154,22 +192,22 @@
         </section>
 
         <section id="security">
-          <h2>9. Security</h2>
+          <h2>10. Security</h2>
           <p>Keeping data on your device rather than on our servers is our main safeguard. We also rely on the security features of Android and Google Play, and this website is served only over HTTPS. No method of storage or transmission is completely secure, so we cannot guarantee absolute security. Please keep your device updated and protected with a screen lock.</p>
         </section>
 
         <section id="transfers">
-          <h2>10. International transfers</h2>
+          <h2>11. International transfers</h2>
           <p>We do not transfer your personal data ourselves. Google and GitHub may process data in other countries, including the United States, using the safeguards described in their own policies, such as standard contractual clauses.</p>
         </section>
 
         <section id="children">
-          <h2>11. Children</h2>
+          <h2>12. Children</h2>
           <p>The Services are meant for a general audience and are not directed at children under 13, or under the minimum age in your country. We do not knowingly collect personal data from children. If you believe a child has sent us personal data, contact us and we will delete it. Where Indian law applies, we do not carry out tracking, behavioural monitoring or targeted advertising directed at children.</p>
         </section>
 
         <section id="rights">
-          <h2>12. Your rights and choices</h2>
+          <h2>13. Your rights and choices</h2>
           <p>Depending on where you live, you may have the right to:</p>
           <ul>
             <li>access the personal data we hold about you and get a copy;</li>
@@ -184,24 +222,24 @@
         </section>
 
         <section id="regional">
-          <h2>13. Region-specific information</h2>
+          <h2>14. Region-specific information</h2>
           <p><strong>United States, including California.</strong> We do not sell personal information for money. In ad-supported apps, AdMob's use of device identifiers for targeted ads may count as "sharing" for cross-context behavioural advertising under some state laws. You can opt out by deleting or resetting your advertising ID, or turning off personalised ads, in your device settings. We do not knowingly sell or share personal information of consumers under 16, and we do not use sensitive personal information to infer characteristics about you.</p>
-          <p><strong>European Economic Area, United Kingdom and Switzerland.</strong> You have the rights in section 12 and may complain to your local supervisory authority.</p>
-          <p><strong>India.</strong> You have the rights given by the Digital Personal Data Protection Act, 2023. Please raise a grievance with us first, as described in section 16, before approaching the Data Protection Board of India.</p>
+          <p><strong>European Economic Area, United Kingdom and Switzerland.</strong> You have the rights in section 13 and may complain to your local supervisory authority.</p>
+          <p><strong>India.</strong> You have the rights given by the Digital Personal Data Protection Act, 2023. Please raise a grievance with us first, as described in section 17, before approaching the Data Protection Board of India.</p>
         </section>
 
         <section id="website">
-          <h2>14. This website</h2>
+          <h2>15. This website</h2>
           <p>This website uses no cookies, analytics, advertising or tracking scripts, and loads no content from third parties. It is hosted on GitHub Pages, and GitHub may log technical data such as IP addresses to secure and operate its service.</p>
         </section>
 
         <section id="changes">
-          <h2>15. Changes to this policy</h2>
+          <h2>16. Changes to this policy</h2>
           <p>We may update this policy when our apps, the law or our practices change. We will post the new version here and update the effective date. If a change materially affects how we handle your personal data, we will tell you in the relevant app or its release notes and, where required, ask for your consent.</p>
         </section>
 
         <section id="contact">
-          <h2>16. Contact and grievances</h2>
+          <h2>17. Contact and grievances</h2>
           <p>For privacy questions, requests or complaints, write to our Grievance Officer at <a href="mailto:anjneyatech@gmail.com?subject=Privacy%20request">anjneyatech@gmail.com</a> with the subject "Privacy request". We acknowledge grievances promptly and aim to resolve them within 30 days.</p>
           <p>Anjneya Tech, India. See also our <a href="terms.html">Terms of Use</a>.</p>
         </section>
