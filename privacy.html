@@ -38,7 +38,7 @@
     <header class="legal-head">
       <a href="index.html" class="back">← Back to home</a>
       <h1>Privacy Policy</h1>
-      <p class="updated">Effective 25 October 2026</p>
+      <p class="updated">Effective 4 November 2026</p>
       <div class="callout">
         <p><strong>In short:</strong> our apps process your files and data on your device. We do not run servers that receive your personal data, we do not sell personal data, and we do not create accounts. Four apps show ads through Google AdMob, which collects some device data as explained in section 6. UnHabit Pro can, if you choose, read health and fitness data from Health Connect on your device to complete your habits, as explained in section 4. That data is never sent to us. IPO Radar keeps the PAN numbers you save in encrypted storage on your device and enters one into a registrar's website only when you start an allotment check, as explained in section 5. Sumi recognises Japanese text in photos on your device with Google ML Kit, which sends Google limited technical data, as explained in section 7. Gujarati Suvichar &amp; Quotes downloads new public quotes from Gujarati Wikiquote and sends nothing about you, as explained in section 3. Diary with Lock: Mood Journal keeps your journal on your device and does not use the internet. It reads your location only when you choose to add a place to an entry, as explained in section 3.</p>
       </div>
@@ -87,7 +87,7 @@
           <p><strong>Diagnostics from Google Play.</strong> If you allow your device to share usage and diagnostics data with Google, Google Play may give us aggregated crash and performance reports (Android vitals). These help us fix bugs and do not identify you to us.</p>
           <p><strong>Text recognition diagnostics (Sumi on Android only).</strong> Sumi's Camera lookup uses Google ML Kit, which sends Google anonymous technical data about the device and the app. We never receive it. See section 7.</p>
           <p><strong>Advertising data.</strong> In ad-supported apps, Google AdMob collects certain device data to show and measure ads. We do not receive this data in a form that identifies you. See section 6.</p>
-          <p>Apart from the optional Health Connect access in UnHabit Pro and the PANs you choose to save in IPO Radar, both described above, and the optional location in Diary with Lock: Mood Journal, described in section 3, our apps do not access sensitive personal data such as health, financial account, government identifier, biometric or precise location data. We never receive any of it. Fingerprint or face unlock in Diary with Lock: Mood Journal is handled by Android: the app only learns whether unlocking succeeded and never receives biometric data. Values you type into calculators, such as loan amounts or body measurements, stay on your device.</p>
+          <p>Apart from the optional Health Connect access in UnHabit Pro and the PANs you choose to save in IPO Radar, both described above, the optional location in Diary with Lock: Mood Journal, and the location stored inside photos and videos that CleanShare reads only to show it to you and remove it, all described in section 3, our apps do not access sensitive personal data such as health, financial account, government identifier, biometric or precise location data. We never receive any of it. Fingerprint or face unlock in Diary with Lock: Mood Journal is handled by Android: the app only learns whether unlocking succeeded and never receives biometric data. Values you type into calculators, such as loan amounts or body measurements, stay on your device.</p>
         </section>
 
         <section id="apps">
@@ -98,7 +98,7 @@
               <tbody>
                 <tr><th scope="row">OpenAny</th><td>No</td><td>Files are opened and shown on the device. If you open a file from a cloud provider such as Google Drive, that provider's terms and privacy policy apply to that connection.</td></tr>
                 <tr><th scope="row">QRino</th><td>No</td><td>Codes are scanned and generated on the device, and history is stored locally. A link inside a scanned code leads to a third-party website we do not control.</td></tr>
-                <tr><th scope="row">CleanShare</th><td>No</td><td>Metadata is read and removed on the device. The app does not request internet access.</td></tr>
+                <tr><th scope="row">CleanShare</th><td>No</td><td>No account and no analytics, and the app does not request internet access. Photos, videos, audio and documents you choose are read and cleaned on the device, including any location stored inside them, which the app shows you only so you can remove it. Cleaned copies made for sharing are kept in the app's private storage and deleted after 24 hours. If you turn on DataWiper, the app cleans new files in folders you pick, in the background and after the device restarts. It keeps a copy of each original file and a history of cleaned file names in its private storage, so you can restore a file for the period you choose (1 to 30 days, 7 by default); the copies are then deleted. App data is excluded from Android backup and device-to-device transfer. Files leave the device only when you share or save them, to the app or folder you pick.</td></tr>
                 <tr><th scope="row">OneCalc</th><td>No</td><td>Inputs and results stay on the device.</td></tr>
                 <tr><th scope="row">Chess Clock Pro</th><td>No</td><td>Settings and presets stay on the device.</td></tr>
                 <tr><th scope="row">AdLens</th><td>Yes</td><td>You sign in with Google so the app can read your own AdMob reports through Google's APIs. Reports, settings and sign-in tokens stay on your device and are not sent to us. See <a href="delete-account.html">Account and data deletion</a>.</td></tr>
@@ -198,7 +198,17 @@
 
         <section id="permissions">
           <h2>8. Device permissions</h2>
-          <p>Our apps ask only for permissions needed for the features you use, for example the camera to scan a QR code in QRino, or Health Connect read access to steps, sleep, exercise, hydration and mindfulness in UnHabit Pro (section 4), or notifications for IPO reminders and alerts in IPO Radar (section 5), or the camera or a photo you choose to read Japanese text, and notifications for an optional daily study reminder, in Sumi, or notifications for the optional daily quote, and on Android 9 and older storage access to save quote images to your gallery, in Gujarati Suvichar &amp; Quotes, or location only when you add a place to an entry, and notifications for an optional daily writing reminder, in Diary with Lock: Mood Journal, which uses Android's biometric prompt for optional fingerprint or face unlock. Android asks for your permission first, and you can review or revoke permissions at any time in your device settings. Revoking a permission may stop the related feature from working.</p>
+          <p>Our apps ask only for permissions needed for the features you use. For example:</p>
+          <ul>
+            <li><strong>QRino:</strong> the camera, to scan a QR code.</li>
+            <li><strong>CleanShare:</strong> access to the location stored in your photos, so the app can show it and remove it; notifications, for optional DataWiper summaries; and starting after the device restarts, so DataWiper can keep cleaning the folders you picked.</li>
+            <li><strong>UnHabit Pro:</strong> Health Connect read access to steps, sleep, exercise, hydration and mindfulness (section 4).</li>
+            <li><strong>IPO Radar:</strong> notifications, for IPO reminders and alerts (section 5).</li>
+            <li><strong>Sumi:</strong> the camera or a photo you choose, to read Japanese text, and notifications, for an optional daily study reminder.</li>
+            <li><strong>Gujarati Suvichar &amp; Quotes:</strong> notifications, for the optional daily quote, and on Android 9 and older, storage access to save quote images to your gallery.</li>
+            <li><strong>Diary with Lock: Mood Journal:</strong> location, only when you add a place to an entry, and notifications, for an optional daily writing reminder. It uses Android's biometric prompt for optional fingerprint or face unlock.</li>
+          </ul>
+          <p>Android asks for your permission first, and you can review or revoke permissions at any time in your device settings. Revoking a permission may stop the related feature from working.</p>
         </section>
 
         <section id="legal">
@@ -217,6 +227,7 @@
           <h2>10. Retention and deletion</h2>
           <ul>
             <li>Data on your device stays there until you delete it in the app, clear the app's storage, or uninstall the app. This includes health totals saved to UnHabit Pro habits and PANs saved in IPO Radar. Entries you delete in Diary with Lock: Mood Journal stay in its Trash for 30 days and are then removed permanently.</li>
+            <li>Some apps delete temporary copies on their own: CleanShare deletes cleaned copies made for sharing after 24 hours, and deletes the original files DataWiper keeps for restoring after the period you choose (1 to 30 days, 7 by default).</li>
             <li>Copies you make yourself, such as backup files, exports or Android backup, stay until you delete them where they are stored.</li>
             <li>Emails you send us are kept while we handle your request and for up to 24 months afterwards, unless the law requires longer. You can ask us to delete them sooner.</li>
             <li>Data collected by Google is kept under Google's policies.</li>
